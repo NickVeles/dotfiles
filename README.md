@@ -1,2 +1,2 @@
-# hyprland dotfiles
-A repository containing my hyprland config.
+# dotfiles
+A repository containing my linux dotfiles
