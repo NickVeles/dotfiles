@@ -6,10 +6,14 @@ A repository containing my linux dotfiles
 - 🐚 Shell - `zsh` with `powerlevel10k` theme
 - 💻 Termianl - `alacritty`
 
+---
+
 ### Other important apps:
 - `oh-my-zsh`
 - `timeshift`
 - 
+
+---
 
 ### Fonts I use
 - `ttf-jetbrains-mono`
