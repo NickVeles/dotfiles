@@ -1,1 +1,0 @@
-0 17 * * * /usr/bin/timeshift --create --comments "Daily $(date +'%F')" --tags D
