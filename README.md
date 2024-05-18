@@ -7,7 +7,7 @@ A repository containing my linux dotfiles
 - 💻 Termianl - `alacritty`
 - a
 - `Dconf Editor`:
-  - 🖱️ cursor-theme - ``
+  - 🖱️ cursor-theme - `Bibata-Modern-Classic`
   - 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
   - 🙂 icon-theme - ``
 
