@@ -5,18 +5,16 @@ A repository containing my linux dotfiles
 - 🎨 Wayland Compositor - `hyprland`
 - 🐚 Shell - `zsh` with `powerlevel10k` theme
 - 💻 Termianl - `alacritty`
-- a
-- `Dconf Editor`:
-  - 🖱️ cursor-theme - `Bibata-Modern-Ice`
-  - 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
-  - 🙂 icon-theme - `Tela-black-dark`
+- 🖱️ cursor-theme - `Bibata-Modern-Ice`(hyprcursor)
+- 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
+- 🙂 icon-theme - `Tela-black-dark`
 
 ---
 
 ### Other important apps:
 - `oh-my-zsh`
 - `timeshift`
-- 
+- `dconf-editor`
 
 ---
 
