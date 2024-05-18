@@ -5,5 +5,12 @@ A repository containing my linux dotfiles
 - `ttf-jetbrains-mono`
 - `ttf-jetbrains-mono-nerd`
 
-### Apps that I use
-- `` - shell 
+### Config:
+- 🎨 Wayland Compositor - `hyprland`
+- 🐚 Shell - `zsh` with `powerlevel10k` theme
+- 💻 Termianl - `alacritty`
+
+### Other important apps:
+- `oh-my-zsh`
+- `timeshift`
+- 
