@@ -1,1 +1,11 @@
 
+[window]
+padding = { x = 5, y = 5 }
+dynamic_padding = true
+opacity = 0.85
+
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+size = 11
+offset = { x = 0, y = 1 }
