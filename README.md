@@ -9,7 +9,7 @@ A repository containing my linux dotfiles
 - `Dconf Editor`:
   - 🖱️ cursor-theme - `Bibata-Modern-Ice`
   - 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
-  - 🙂 icon-theme - ``
+  - 🙂 icon-theme - `Tela-black-dark`
 
 ---
 
