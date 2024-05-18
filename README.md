@@ -5,6 +5,11 @@ A repository containing my linux dotfiles
 - 🎨 Wayland Compositor - `hyprland`
 - 🐚 Shell - `zsh` with `powerlevel10k` theme
 - 💻 Termianl - `alacritty`
+- a
+- `Dconf Editor`:
+  - 🖱️ cursor-theme - ``
+  - 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
+  - 🙂 icon-theme - ``
 
 ---
 
