@@ -1,10 +1,6 @@
 # dotfiles
 A repository containing my linux dotfiles
 
-### Fonts I use
-- `ttf-jetbrains-mono`
-- `ttf-jetbrains-mono-nerd`
-
 ### Config:
 - 🎨 Wayland Compositor - `hyprland`
 - 🐚 Shell - `zsh` with `powerlevel10k` theme
@@ -14,3 +10,7 @@ A repository containing my linux dotfiles
 - `oh-my-zsh`
 - `timeshift`
 - 
+
+### Fonts I use
+- `ttf-jetbrains-mono`
+- `ttf-jetbrains-mono-nerd`
