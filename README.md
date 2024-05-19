@@ -27,4 +27,4 @@ A repository containing my linux dotfiles
 - `opendyslexic mono`
 
 ### TODO
-- [ ] Fix hyprcursor
+- [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
