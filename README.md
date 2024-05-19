@@ -25,4 +25,4 @@ A repository containing my linux dotfiles
 - `opendyslexic mono`
 
 ### TODO
-- [ ] hyprcursor doesn't work :(
+- [ ] Fix hyprcursor
