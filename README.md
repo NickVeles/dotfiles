@@ -12,6 +12,8 @@ A repository containing my linux dotfiles
 ---
 
 ### Other important apps:
+- `hyprlock`
+- `hyprpicker`
 - `oh-my-zsh`
 - `timeshift`
 - `dconf-editor`
