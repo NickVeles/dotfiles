@@ -13,6 +13,7 @@ A repository containing my linux dotfiles
 
 ### Other important apps:
 - `hyprlock`
+- `hypridle`
 - `hyprpicker`
 - `oh-my-zsh`
 - `timeshift`
