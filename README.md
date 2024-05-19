@@ -23,3 +23,6 @@ A repository containing my linux dotfiles
 - `ttf-jetbrains-mono-nerd`
 - `opendyslexic3`
 - `opendyslexic mono`
+
+### TODO
+- [ ] hyprcursor doesn't work :(
