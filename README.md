@@ -8,16 +8,20 @@ A repository containing my linux dotfiles
 - 🖱️ cursor-theme - `Bibata-Modern-Ice`(hyprcursor)
 - 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
 - 🙂 icon-theme - `Tela-black-dark`
+- 🕥 Status Bar - `waybar`
 
 ---
 
 ### Other important apps:
+- `discord`
 - `hyprlock`
 - `hypridle`
 - `hyprpicker`
 - `oh-my-zsh`
 - `timeshift`
 - `dconf-editor`
+- `mpd`
+- 
 
 ---
 
