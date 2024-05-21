@@ -1,0 +1,38 @@
+;; Clock
+
+; vars
+(defvar time-visible false)
+
+(
+  defpoll time
+  :interval "1s"
+  :initial "ERR :("
+  :run-while time-visible
+  `date +"%I:%M %p"`
+)
+
+; widget
+(
+  defwidget clock [] (
+    box
+    :class "container"
+    time
+  )
+)
+
+; window
+(
+  defwindow clock
+  :monitor 0
+  :geometry (
+    geometry
+    :x "10px"
+    :y "10px"
+    :width "100px"
+    :height "24px"
+    :anchor "top center"
+  )
+  :stacking "fg"
+  :exclusive true
+  (clock)
+)
