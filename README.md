@@ -2,27 +2,28 @@
 A repository containing my linux dotfiles
 
 ### Config:
-- 🎨 Wayland Compositor - `hyprland`
-- 🐚 Shell - `zsh` with `powerlevel10k` theme
-- 💻 Termianl - `alacritty`
-- 🖱️ cursor-theme - `Bibata-Modern-Ice`(hyprcursor)
-- 📂 gtk-theme - `Orchis-Orange-Dark` (5px)
-- 🙂 icon-theme - `Tela-black-dark`
-- 🕥 Status Bar - `waybar`
+- 🎨 `hyprland` - wayland compositor
+- 🐚 `zsh` with `powerlevel10k` - shell theme
+- 💻 `alacritty` - termianl
+- 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
+- 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
+- 🙂 `Tela-black-dark` - icon-theme
+- 🕥 `eww` - status Bar
 
 ---
 
 ### Other important apps:
-- `discord`
-- `hyprlock`
-- `hypridle`
-- `hyprpicker`
-- `oh-my-zsh`
-- `timeshift`
-- `dconf-editor`
-- `mpd`
-- `pipewire-pulse`
-- `pavucontrol`
+- `discord` - voice chat
+- `hyprcursor` - cursor for Hyprland
+- `hyprlock` - lock screen for Hyprland
+- `hypridle` - idle state manager for Hyprland
+- `hyprpicker` - color picker for Hyprland
+- `oh-my-zsh` - zsh tool
+- `timeshift` - system backup manager
+- `dconf-editor` - theme editor
+- `mpd` - music player daemon
+- `pipewire-pulse` - for pavucontrol
+- `pavucontrol` - sound control
 
 ---
 
