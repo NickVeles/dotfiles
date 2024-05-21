@@ -25,6 +25,8 @@ A repository containing my linux dotfiles
 - `pipewire-pulse` - for pavucontrol
 - `pavucontrol` - sound control
 - `piper` - mouse control
+- `grim` - screenshotting
+- `slurp` - screenshotting
 
 ---
 
