@@ -21,7 +21,8 @@ A repository containing my linux dotfiles
 - `timeshift`
 - `dconf-editor`
 - `mpd`
-- 
+- `pipewire-pulse`
+- `pavucontrol`
 
 ---
 
