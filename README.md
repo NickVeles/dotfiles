@@ -37,3 +37,4 @@ A repository containing my linux dotfiles
 ### TODO
 - [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
 - [ ] Fix Discord screen sharing
+- [ ] Fix piper macros
