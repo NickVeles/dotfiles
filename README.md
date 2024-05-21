@@ -35,6 +35,7 @@ A repository containing my linux dotfiles
 - `ttf-jetbrains-mono-nerd`
 - `opendyslexic3`
 - `opendyslexic mono`
+- `ttf-font-awesome`
 
 ### TODO
 - [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
