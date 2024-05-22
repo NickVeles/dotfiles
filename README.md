@@ -41,3 +41,4 @@ A repository containing my linux dotfiles
 - [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
 - [ ] Fix Discord screen sharing
 - [ ] Fix piper macros
+- [ ] Eww does not support linear-gradient...
