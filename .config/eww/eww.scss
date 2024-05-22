@@ -1,0 +1,36 @@
+// Variables
+$bg-color: rgba($color: #2C2C2C, $alpha: 1.00);
+$ab-color: rgba($color: #FB8C00, $alpha: 0.93);
+$ib-color: rgba($color: #595959, $alpha: 0.67);
+$ib-color: rgba($color: #3B3B3B, $alpha: 1.00); // <-- Temp fix
+$sh-color: rgba($color: #1A1A1A, $alpha: 0.93);
+
+
+// Styles
+* {
+    all: unset;
+    font-family: 'JetBrains Mono NF', monospace;
+    color: #e8eaed;
+}
+
+.container {
+    background: $bg-color;
+    border: $ib-color 2px solid;
+    border-radius: 12px;
+}
+
+.active {
+    border: $ab-color 2px solid;
+}
+
+.spacer {
+    margin: 0 5px;
+}
+
+.spacer:first-child {
+    margin-left: 10px;
+}
+
+.spacer:last-child {
+    margin-right: 10px;
+}

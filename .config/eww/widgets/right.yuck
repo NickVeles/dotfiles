@@ -1,0 +1,93 @@
+;; Notifications
+
+(
+  defwidget notifications [] (
+    image
+    :class "container"
+    :width 24
+    :path "icons/notifications.svg"
+    :image-width 18
+  )
+)
+
+;; Sound
+(
+  defwidget sound [] (
+    box
+    :class "container"
+    :space-evenly false
+    :spacing 5
+
+    ; Volume
+    (
+      box
+      :class "spacer"
+      :space-evenly false
+      :spacing 5
+      (
+        image
+        :path "icons/volume.svg"
+        :image-width 18
+      )
+      (
+        box
+        "100%"
+      )
+    )
+
+    ; Mic
+    (
+      box
+      :class "spacer"
+      :space-evenly false
+      :spacing 5
+      (
+        image
+        :path "icons/mic.svg"
+        :image-width 18
+      )
+      (
+        box
+        "100%"
+      )
+    )
+  )
+)
+
+;; Time
+(defvar time-visible false)
+
+(
+  defpoll time
+  :interval "1s"
+  :initial ""
+  :run-while time-visible
+  ; `date +"%I:%M %p"` ;us
+  `date +"%H:%M"` ;eu
+)
+
+(
+  defwidget time [] (
+    box
+    :class "container"
+    (
+      box
+      :class "spacer"
+      time
+    )
+  )
+)
+
+
+;; Main Widget
+(
+  defwidget right [] (
+    box
+    :halign "end"
+    :spacing 10
+    :space-evenly false
+    (notifications)
+    (sound)
+    (time)
+  )
+)
