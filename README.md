@@ -3,7 +3,7 @@ A repository containing my linux dotfiles
 
 ### Config:
 - 🎨 `hyprland` - wayland compositor
-- 🐚 `zsh` with `powerlevel10k` - shell theme
+- 🐚 `zsh` with `powerlevel10k` - shell + theme
 - 💻 `alacritty` - termianl
 - 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
 - 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
