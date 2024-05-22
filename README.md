@@ -37,6 +37,8 @@ A repository containing my linux dotfiles
 - `opendyslexic mono` [link](https://opendyslexic.org/)
 - `ttf-font-awesome`
 
+---
+
 ### TODO
 - [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
 - [ ] Fix Discord screen sharing
