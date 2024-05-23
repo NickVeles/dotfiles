@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# listener.sh - A script for handling Hyprland event changes.
+# listener.sh - handles Hyprland event changes.
 
 fetch_all_workspaces() {
   # fetch the IDs of all workspaces:
