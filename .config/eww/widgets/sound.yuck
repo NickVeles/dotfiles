@@ -15,8 +15,6 @@
   "ERR%" ; initial value
 )
 
-scripts/updateMic.sh
-
 (
   defvar outVolume
   "ERR%" ; initial value
