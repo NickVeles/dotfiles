@@ -27,6 +27,8 @@ A repository containing my linux dotfiles
 - `piper` - mouse control
 - `grim` - screenshotting
 - `slurp` - screenshotting
+- `inkscape` - SVG editor
+- `jq` - jquery
 
 ---
 
