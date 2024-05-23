@@ -3,8 +3,8 @@
 # handleAudio.sh - handles volume and updates the corresponding stream icon in eww
 
 # Run the scripts at least once
-./updateOut.sh
-./updateMic.sh
+exec $HOME/.config/eww/scripts/updateOut.sh
+exec $HOME/.config/eww/scripts/updateMic.sh
 
 # Subscribe to PulseAudio events
 pactl subscribe | while read -r event; do
