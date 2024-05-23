@@ -1,0 +1,47 @@
+;; Sound
+(
+  defwidget sound [] (
+    box
+    :class "border"
+    (
+      box
+      :class "container"
+      :space-evenly false
+      :spacing 5
+
+      ; Volume
+      (
+        box
+        :class "spacer"
+        :space-evenly false
+        :spacing 5
+        (
+          image
+          :path "icons/volume.svg"
+          :image-width 18
+        )
+        (
+          box
+          "100%"
+        )
+      )
+
+      ; Mic
+      (
+        box
+        :class "spacer"
+        :space-evenly false
+        :spacing 5
+        (
+          image
+          :path "icons/mic.svg"
+          :image-width 18
+        )
+        (
+          box
+          "100%"
+        )
+      )
+    )
+  )
+)

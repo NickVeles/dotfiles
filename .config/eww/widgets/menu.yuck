@@ -1,0 +1,14 @@
+;; Menu
+(
+  defwidget menu [] (
+    box
+    :class "border"
+    (
+      image
+      :class "container"
+      :width 20
+      :path "icons/menu.svg"
+      :image-width 14
+    )
+  )
+)

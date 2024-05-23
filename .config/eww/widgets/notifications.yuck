@@ -1,0 +1,14 @@
+;; Notifications
+(
+  defwidget notifications [] (
+    box
+    :class "border"
+    (
+      image
+      :class "container"
+      :width 20
+      :path "icons/notifications.svg"
+      :image-width 18
+    )
+  )
+)

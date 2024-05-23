@@ -1,0 +1,14 @@
+(include "widgets/menu.yuck")
+(include "widgets/workspaces.yuck")
+
+;; Main Widget
+(
+  defwidget left [] (
+    box
+    :halign "start"
+    :spacing 10
+    :space-evenly false
+    (menu)
+    (workspaces)
+  )
+)

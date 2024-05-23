@@ -1,0 +1,16 @@
+(include "widgets/notifications.yuck")
+(include "widgets/sound.yuck")
+(include "widgets/time.yuck")
+
+;; Main Widget
+(
+  defwidget right [] (
+    box
+    :halign "end"
+    :spacing 10
+    :space-evenly false
+    (notifications)
+    (sound)
+    (time)
+  )
+)

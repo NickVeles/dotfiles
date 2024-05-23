@@ -1,0 +1,27 @@
+;; Time
+(defvar time-visible false)
+
+(
+  defpoll time
+  :interval "5s"
+  :initial "ERROR"
+  :run-while time-visible
+  ; `date +"%I:%M %p"` ;us
+  `date +"%H:%M"` ;eu
+)
+
+(
+  defwidget time [] (
+    box
+    :class "border"
+    (
+      box
+      :class "container"
+      (
+        box
+        :class "spacer"
+        time
+      )
+    )
+  )
+)

@@ -1,7 +1,9 @@
+;; *THIS CONFIG RELIES ON THE HYPRLAND LISTENER IN $HOME/.config/hypr/scripts/listener.sh*
+
 ;; Bar
-(include "widgets/left.yuck")
-(include "widgets/middle.yuck")
-(include "widgets/right.yuck")
+(include "left.yuck")
+(include "middle.yuck")
+(include "right.yuck")
 
 (
   defwidget bar [] (

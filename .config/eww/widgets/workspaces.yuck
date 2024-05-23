@@ -1,0 +1,27 @@
+;; Workspaces
+(defvar workspaces "[1]") ; <- get every used workspace
+
+(defvar acSpace "1") ; <- get the active workspace
+
+(
+  defwidget workspaces [] (
+    box
+    :class "border"    
+    (
+      box
+      :class "container"
+      :space-evenly false
+      (
+        for space in workspaces
+        (
+          button
+          :class {acSpace == space ? "active spacer" : "spacer"}
+          :active {acSpace != space} ; <- prevent clicking on the active workspace
+          :onclick "hyprctl dispatch workspace ${space}"
+          space
+        )
+      )
+      
+    )
+  )
+)
