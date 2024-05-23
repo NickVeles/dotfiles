@@ -24,6 +24,7 @@ A repository containing my linux dotfiles
 - `mpd` - music player daemon
 - `pipewire-pulse` - for pavucontrol
 - `pavucontrol` - sound control
+- `pamixer` - terminal sound control
 - `piper` - mouse control
 - `grim` - screenshotting
 - `slurp` - screenshotting
