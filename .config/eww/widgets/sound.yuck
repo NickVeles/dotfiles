@@ -1,5 +1,28 @@
 ;; Sound
 (
+  defvar micIcon
+  "error"
+)
+
+(
+  defvar outIcon
+  "error"
+)
+
+
+(
+  defvar micVolume
+  "ERR%" ; initial value
+)
+
+scripts/updateMic.sh
+
+(
+  defvar outVolume
+  "ERR%" ; initial value
+)
+
+(
   defwidget sound [] (
     box
     :class "border"
@@ -9,7 +32,7 @@
       :space-evenly false
       :spacing 5
 
-      ; Volume
+      ; Output
       (
         box
         :class "spacer"
@@ -17,12 +40,12 @@
         :spacing 5
         (
           image
-          :path "icons/volume.svg"
+          :path "icons/${outIcon}.svg"
           :image-width 18
         )
         (
-          box
-          "100%"
+          label
+          :text outVolume
         )
       )
 
@@ -34,12 +57,12 @@
         :spacing 5
         (
           image
-          :path "icons/mic.svg"
+          :path "icons/${micIcon}.svg"
           :image-width 18
         )
         (
-          box
-          "100%"
+          label
+          :text micVolume
         )
       )
     )
