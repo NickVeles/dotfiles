@@ -30,7 +30,7 @@ A repository containing my linux dotfiles
 - `slurp` - screenshotting
 - `inkscape` - SVG editor
 - `jq` - jquery
-- `socat` - reading Hyprland socket2
+- `socat` - reading sockets
 
 ---
 
