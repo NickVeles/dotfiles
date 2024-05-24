@@ -1,10 +1,22 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Monokai-Pro.toml"
+]
+
 [window]
-padding = { x = 5, y = 2 }
 dynamic_padding = true
 opacity = 0.85
 
+  [window.padding]
+  x = 5
+  y = 2
 
 [font]
-normal = { family = "JetBrains Mono NF", style = "Regular" }
 size = 11
-offset = { x = 0, y = 1 }
+
+  [font.normal]
+  family = "JetBrains Mono NF"
+  style = "Regular"
+
+  [font.offset]
+  x = 0
+  y = 1
