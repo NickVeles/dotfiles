@@ -1,6 +1,7 @@
 #!/bin/sh
 
-volume=$(pamixer --get-volume-human --source "alsa_input.pci-0000_07_00.4.analog-stereo")
+microphone="alsa_input.pci-0000_07_00.4.analog-stereo"
+volume=$(pamixer --get-volume-human --source "$microphone")
 
 if [ "$volume" = "muted" ]; then
     # Set the icon to muted if it's muted
