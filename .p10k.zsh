@@ -220,10 +220,10 @@
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#F19763'
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#FB8C00'
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND='#F19763'
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND='#FB8C00'
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
