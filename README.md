@@ -40,6 +40,7 @@ A repository containing my linux dotfiles
 - `opendyslexic3` [link](https://opendyslexic.org/)
 - `opendyslexic mono` [link](https://opendyslexic.org/)
 - `ttf-font-awesome`
+- `noto-fonts-emoji`
 
 ---
 
