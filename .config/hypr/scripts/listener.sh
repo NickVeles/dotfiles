@@ -6,7 +6,7 @@ fetch_all_workspaces() {
   # fetch the IDs of all workspaces:
   # - that are not secret (id < 0)
   # - in the JSON format, e.g. [1, 2, 3]
-  hyprctl workspaces -j | jq -c '[.[] | select(.id > 0) | .id]'
+  hyprctl workspaces -j | jq -c '[.[] | select(.id > 0) | .id] | sort'
 }
 
 fetch_active_workspace() {
