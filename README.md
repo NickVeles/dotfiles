@@ -33,6 +33,7 @@ A repository containing my linux dotfiles
 - `socat` - reading sockets
 - `alacritty-themes` = terminal theme
 - `vlc` - media player
+- `dunst` - notify daemon
 
 ---
 
