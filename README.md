@@ -35,6 +35,7 @@ A repository containing my linux dotfiles
 - `alacritty-themes` - terminal theme
 - `vlc` - media player
 - `dunst` - notify daemon
+- `ranger` - backup file manager
 
 ---
 
