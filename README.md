@@ -9,6 +9,7 @@ A repository containing my linux dotfiles
 - 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
 - 🙂 `Tela-black-dark` - icon-theme
 - 🕥 `eww` - status Bar
+- 🗃️ `thunar` - file manager
 
 ---
 
@@ -31,7 +32,7 @@ A repository containing my linux dotfiles
 - `inkscape` - SVG editor
 - `jq` - jquery
 - `socat` - reading sockets
-- `alacritty-themes` = terminal theme
+- `alacritty-themes` - terminal theme
 - `vlc` - media player
 - `dunst` - notify daemon
 
