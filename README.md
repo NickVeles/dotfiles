@@ -22,7 +22,6 @@ A repository containing my linux dotfiles
 - `oh-my-zsh` - zsh tool
 - `timeshift` - system backup manager
 - `dconf-editor` - theme editor
-- `mpd` - music player daemon
 - `pipewire-pulse` - for pavucontrol
 - `pavucontrol` - sound control
 - `pamixer` - terminal sound control
