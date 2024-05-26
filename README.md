@@ -5,6 +5,7 @@ A repository containing my linux dotfiles
 - 🎨 `hyprland` - wayland compositor
 - 🐚 `zsh` with `powerlevel10k` - shell + theme
 - 💻 `alacritty` - termianl
+- 🔍 `rofi-wayland` - dmenu
 - 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
 - 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
 - 🙂 `Tela-black-dark` - icon-theme
