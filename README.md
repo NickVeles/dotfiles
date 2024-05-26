@@ -31,7 +31,7 @@ A repository containing my linux dotfiles
 - `inkscape` - SVG editor
 - `jq` - jquery
 - `socat` - reading sockets
-- `alacritty-themes`
+- `alacritty-themes` = terminal theme
 - `vlc` - media player
 
 ---
