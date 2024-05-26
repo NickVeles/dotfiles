@@ -36,6 +36,7 @@ A repository containing my linux dotfiles
 - `vlc` - media player
 - `dunst` - notify daemon
 - `ranger` - backup file manager
+- `dragon-drop` - addon for ranger
 
 ---
 
