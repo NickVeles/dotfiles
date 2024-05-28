@@ -39,6 +39,7 @@ A repository containing my linux dotfiles
 - `Tela-circle-black-dark` - icons for dmenu
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
+- `blueman` - bluetooth GUI
 
 ---
 
