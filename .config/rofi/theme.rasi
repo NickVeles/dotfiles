@@ -1,0 +1,178 @@
+* {
+    font:                        "JetBrains Mono NF 12";
+
+    // OLD
+    // tx-color:                    rgba ( 232, 234, 237, 100 % ); // #E8EAED text
+    // bg-color:                    rgba ( 44, 44, 44, 100 % );    // #2C2C2C background
+    // lb-color:                    rgba ( 251, 140, 0, 33 % );    // #FFA32F light
+    ab-color:                    rgba ( 251, 140, 0, 93 % );    // #FB8C00 active
+    // ib-color:                    rgba ( 89, 89, 89, 67 % );     // #595959 inactive
+    // er-color:                    rgba ( 255, 102, 102, 100 % ); // #FF6666 error
+
+    // NEW
+    tx-color:                    rgba ( 252, 252, 250, 100 % ); // #FCFCFA text
+    bg-color:                    rgba ( 45, 42, 46, 100 % );    // #2D2A2E background
+    lb-color:                    rgba ( 64, 62, 65, 100 % );    // #403E41 light
+    ib-color:                    rgba ( 91, 89, 92, 67 % );     // #5B595C inactive
+
+    // OTHER
+    er-color:                    rgba ( 255, 97, 136, 100 % );  // #FF6188 error
+    wa-color:                    rgba ( 255, 216, 102, 100 % ); // #FFD866 warning
+    in-color:                    rgba ( 101, 214, 196, 100 % ); // #65D6C4 info
+
+
+    spacing:                     10;
+
+    background-color:            transparent;
+    border-color:                var(ab-color);
+}
+
+// ELEMENT
+element {
+    padding: 5px 10px;
+    cursor:  pointer;
+    border:  0;
+    border-radius: 50%;
+
+    children: [ "element-icon", "element-text" ];
+    spacing: 10px;
+}
+
+// ELEMENT UNSELECTED
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+    text-color:       var(tx-color);
+}
+element normal.urgent, element alternate.urgent {
+    background-color: transparent;
+    text-color:       var(er-color);
+}
+element normal.active, element alternate.active {
+    background-color: transparent;
+    text-color:       var(in-color);
+}
+
+// ELEMENT SELECTED
+element selected.normal {
+    background-color: var(lb-color);
+    text-color:       var(wa-color);
+}
+element selected.urgent {
+    background-color: var(lb-color);
+    text-color:       var(wa-color);
+}
+element selected.active {
+    background-color: var(lb-color);
+    text-color:       var(wa-color);
+}
+
+// ELEMENT PROPERTIES
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    size:             1.0000em ;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+// WINDOW
+window {
+    width:            40%;
+    // padding:          10px;
+    background-color: var(bg-color);
+    border:           2px;
+    border-radius:    12px;
+}
+mainbox {
+    padding: 0;
+    border:  0;
+}
+message {
+    padding:      1px ;
+    border-color: var(er-color);
+    border:       2px solid 0px 0px ;
+}
+textbox {
+    text-color:   var(tx-color);
+}
+
+// LIST
+listview {
+    // padding:       10px 0px 0px 0px ;
+    padding:       10px ;
+    spacing:       2px ;
+    border-color:  var(lb-color);
+    border:        2px solid 0px 0px ;
+    
+    fixed-height:  0;
+    lines: 12;
+    scrollbar:     false;
+    
+}
+scrollbar {
+    width:         4px ;
+    margin:        0 0 0 10px;
+    handle-width:  8px ;
+    handle-color:  var(lb-color);
+}
+
+// SIDEBAR
+sidebar {
+    border-color: var(ib-color);
+    border:        2px solid 0px 0px ;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: var(tx-color);
+}
+button selected {
+    background-color: var(lb-color);
+    text-color:       var(tx-color);
+}
+
+// INPUTBAR
+num-filtered-rows {
+    expand:     false;
+    text-color: var(ib-color);
+}
+num-rows {
+    expand:     false;
+    text-color: var(ib-color);
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: var(ib-color);
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(tx-color);
+}
+inputbar {
+    padding:    15px 20px 5px 20px ;
+    spacing:    0px ;
+    text-color: var(tx-color);
+    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+entry {
+    text-color:        var(tx-color);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: var(ib-color);
+    placeholder:       "input...";
+}
+prompt {
+    spacing:    0;
+    text-color: var(tx-color);
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ": ";
+    text-color: inherit;
+}

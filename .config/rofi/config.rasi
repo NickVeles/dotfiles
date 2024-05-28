@@ -1,1 +1,14 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ drun ];
+  icon-theme: "black-dark"; // Tela circle
+}
 
+// TODO
+// - Emojis
+// - Calculator
+// - etc.
+
+@theme "theme"
+ 
+/* Insert theme modifications after this */
