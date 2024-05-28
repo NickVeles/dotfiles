@@ -1,14 +1,14 @@
 ;; Notifications
 (
-  defwidget notifications [] (
+  defwidget notifications [] ( ; TODO: change this to wifi
     box
     :class "border"
     (
       image
       :class "container"
       :width 20
-      :path "icons/notifications.svg"
-      :image-width 18
+      :path "icons/wifi.svg"
+      :image-width 16
     )
   )
 )

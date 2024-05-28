@@ -1,10 +1,18 @@
-// Variables
-$bg-color: rgba($color: #2C2C2C, $alpha: 1.00); // background
-$ab-color: rgba($color: #FB8C00, $alpha: 0.93); // active
-$ib-color: rgba($color: #595959, $alpha: 0.67); // inactive
-$sh-color: rgba($color: #1A1A1A, $alpha: 0.93); // shadow
-$no-color: rgba($color: #FF6666, $alpha: 1.00); // disabled
+// // OLD COLORS
+// $bg-color: rgba($color: #2C2C2C, $alpha: 1.00); // background
+// $ab-color: rgba($color: #FB8C00, $alpha: 0.93); // active
+// $ib-color: rgba($color: #595959, $alpha: 0.67); // inactive
+// $er-color: rgba($color: #FF6666, $alpha: 1.00); // error
 
+// NEW COLORS
+$tx-color: rgba($color: #FCFCFA, $alpha: 1.00); // text
+$bg-color: rgba($color: #2D2A2E, $alpha: 1.00); // background
+$lb-color: rgba($color: #403E41, $alpha: 1.00); // light
+$ab-color: rgba($color: #FB8C00, $alpha: 0.93); // active
+$ib-color: rgba($color: #5B595C, $alpha: 0.67); // inactive
+$er-color: rgba($color: #FF6188, $alpha: 1.00); // error
+$wa-color: rgba($color: #FFD866, $alpha: 1.00); // warning
+$in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
 
 // Styles
 * {
@@ -16,8 +24,7 @@ $no-color: rgba($color: #FF6666, $alpha: 1.00); // disabled
 .container {
     background: $bg-color;
     border-radius: 10px;
-    color: #e8eaed;
-
+    color: $tx-color;
 
     font-family: 'JetBrains Mono NF', monospace;
 }
