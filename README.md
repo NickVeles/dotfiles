@@ -27,8 +27,7 @@ A repository containing my linux dotfiles
 - `pavucontrol` - sound control
 - `pamixer` - terminal sound control
 - `piper` - mouse control
-- `grim` - screenshotting
-- `slurp` - screenshotting
+- `grimblast-git` - screenshotting
 - `inkscape` - SVG editor
 - `jq` - jquery
 - `socat` - reading sockets
