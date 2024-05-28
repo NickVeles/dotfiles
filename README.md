@@ -37,6 +37,8 @@ A repository containing my linux dotfiles
 - `ranger` - backup file manager
 - `dragon-drop` - addon for ranger
 - `Tela-circle-black-dark` - icons for dmenu
+- `bluez` - bluetooth
+- `bluez-utils` - bluetooth
 
 ---
 
