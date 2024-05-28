@@ -337,7 +337,7 @@
 [urgency_normal]
     background = "#2D2A2EFF" ; dark-gray
     foreground = "#FCFCFAFF" ; whiteish
-    frame_color = "#FB8C00EE" ; vivid-orange
+    frame_color = "#FC9867EE" ; vivid-orange
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency, uncomment to enable
