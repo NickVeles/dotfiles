@@ -19,7 +19,7 @@
     button
     :class "container"
     :visible bluetoothEnabled
-    :tooltip "${bluetoothName}"
+    :tooltip " ${bluetoothName} "
     :onclick `hyprctl dispatch exec [floating] blueman-manager`
     (
       image

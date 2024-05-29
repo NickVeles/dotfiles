@@ -19,7 +19,7 @@
     button
     :class "container"
     :onclick `hyprctl dispatch exec [floating] nm-connection-editor`
-    :tooltip "${networkName} - ${networkDevice}"
+    :tooltip " ${networkName} - ${networkDevice} "
     (
       image
       :width 20
