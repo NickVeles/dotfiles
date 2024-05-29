@@ -21,15 +21,15 @@
 
 (
   defwidget sound [] (
-    box
-    :class "border"
+    button
+    :onclick `hyprctl dispatch exec [floating] pavucontrol`
+    :class "container"
+
+    ; Output
     (
       box
-      :class "container"
-      :space-evenly false
       :spacing 5
-
-      ; Output
+      :space-evenly false
       (
         box
         :class "spacer"

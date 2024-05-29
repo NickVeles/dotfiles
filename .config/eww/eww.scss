@@ -23,15 +23,17 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
 
 .container {
     background: $bg-color;
-    border-radius: 10px;
     color: $tx-color;
-
+    
+    border: $ib-color 2px solid;
+    border-radius: 12px;
+    
     font-family: 'JetBrains Mono NF', monospace;
 }
 
-.border {
-    border: $ib-color 2px solid;
-    border-radius: 12px;
+.container:hover, .container:active {
+    background: $lb-color;
+    border: $ab-color 2px solid;
 }
 
 // Text
@@ -50,4 +52,11 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
 
 .spacer:last-child {
     padding-right: 10px;
+}
+
+tooltip {
+    background: $bg-color;
+    border: $ib-color 2px solid;
+    border-radius: 20px;
+    color: $tx-color;
 }

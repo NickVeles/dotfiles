@@ -1,5 +1,8 @@
-(include "widgets/notifications.yuck")
 (include "widgets/sound.yuck")
+(include "widgets/network.yuck")
+(include "widgets/bluetooth.yuck")
+(include "widgets/battery.yuck")
+(include "widgets/kb_layout.yuck")
 (include "widgets/time.yuck")
 
 ;; Main Widget
@@ -9,8 +12,11 @@
     :halign "end"
     :spacing 10
     :space-evenly false
-    (notifications)
     (sound)
+    (network)
+    (bluetooth)
+    (battery)
+    (kbLayout)
     (time)
   )
 )

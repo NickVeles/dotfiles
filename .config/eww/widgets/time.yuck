@@ -12,16 +12,14 @@
 
 (
   defwidget time [] (
-    box
-    :class "border"
+    button
+    :class "container"
+    ; :onclick
+    ; :onrightclick
     (
       box
-      :class "container"
-      (
-        box
-        :class "spacer"
-        time
-      )
+      :class "spacer"
+      time
     )
   )
 )

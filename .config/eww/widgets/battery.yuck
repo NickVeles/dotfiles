@@ -1,0 +1,32 @@
+;; Battery
+(
+  defvar batteryIcon
+  "error"
+)
+
+(
+  defvar batteryEnabled
+  false
+)
+
+(
+  defwidget battery [] (
+    button
+    :class "container"
+    :visible batteryEnabled
+    (
+      box
+      :class "spacer"
+      :space-evenly false
+      (
+        image
+        :path "icons/${batteryIcon}.svg"
+        :image-width 18
+      )
+      (
+        label
+        :text "TODO"
+      )
+    )
+  )
+)

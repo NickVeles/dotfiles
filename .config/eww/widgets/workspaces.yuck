@@ -5,11 +5,10 @@
 
 (
   defwidget workspaces [] (
-    box
-    :class "border"    
+    button
+    :class "container"
     (
       box
-      :class "container"
       :space-evenly false
       (
         for space in workspaces
@@ -21,7 +20,6 @@
           space
         )
       )
-      
     )
   )
 )

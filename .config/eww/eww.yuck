@@ -26,7 +26,9 @@
     :height "24px"
     :anchor "top center"
   )
+  :stacking "bg"
   :exclusive true
-  :stacking "fg"
+  :focusable false
+  :namespace "bar"
   (bar)
 )
