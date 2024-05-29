@@ -55,6 +55,7 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
 }
 
 tooltip {
+    font-family: 'JetBrains Mono NF', monospace;
     background: $bg-color;
     border: $ib-color 2px solid;
     border-radius: 20px;
