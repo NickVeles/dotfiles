@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Function to check Bluetooth connectivity and print connection status
 updateBluetooth() {

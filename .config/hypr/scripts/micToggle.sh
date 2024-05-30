@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 microphone="alsa_input.pci-0000_07_00.4.analog-stereo"
 # Toggle the source

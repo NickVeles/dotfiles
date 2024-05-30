@@ -1,0 +1,37 @@
+;; System Tray
+(
+  defvar systrayVisible
+  false
+)
+
+(
+  defwidget tray [] (
+    eventbox
+    :onhover `eww update systrayVisible=true`
+    :onhoverlost `eww update systrayVisible=false`
+    :class "container"
+    (
+      box
+      :space-evenly false
+      (
+        image
+        :class "systray"
+        :path "icons/systray.svg"
+        :image-width 16
+      )
+      (
+        revealer
+        :class "spacer"
+        :transition "slideright"
+        :reveal systrayVisible
+        :duration "200ms"
+        (
+          systray
+          :spacing 5
+          :space-evenly false
+          :icon-size 18
+        )
+      )
+    )
+  )
+)

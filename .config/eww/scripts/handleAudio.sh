@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # handleAudio.sh - handles volume and updates the corresponding stream icon in eww
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Define the directory path
 target=$1

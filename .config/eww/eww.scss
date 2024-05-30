@@ -20,7 +20,6 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
 }
 
 // Containers
-
 .container {
     background: $bg-color;
     color: $tx-color;
@@ -36,8 +35,11 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
     border: $ab-color 2px solid;
 }
 
-// Text
+.systray {
+    padding: 0 4px;
+}
 
+// Text
 .active {
     color: $ab-color;
 }
@@ -60,4 +62,29 @@ tooltip {
     border: $ib-color 2px solid;
     border-radius: 20px;
     color: $tx-color;
+}
+
+// MENU (systray)
+menu {
+    font-family: 'JetBrains Mono NF', monospace;
+
+    background: $bg-color;
+    color: $tx-color;
+    
+    border: $ab-color 2px solid;
+    border-radius: 12px;
+
+    padding: 10px;
+}
+
+menu *:not(:first-child) {
+    padding: 2px 5px;
+    margin: 0;
+}
+
+menu *:not(:first-child):hover {
+    background: $lb-color;
+    color: $wa-color;
+
+    border-radius: 20px;
 }

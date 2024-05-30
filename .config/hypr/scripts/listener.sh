@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # listener.sh - handles Hyprland event changes.
 

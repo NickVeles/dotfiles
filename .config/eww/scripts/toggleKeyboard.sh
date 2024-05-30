@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 layout=$(eww get keyboard)
 
