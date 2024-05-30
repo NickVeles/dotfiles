@@ -51,10 +51,11 @@ A repository containing my linux dotfiles
 - `ttf-font-awesome`
 - `noto-fonts-emoji`
 
+### Other
+- [My Firefox theme](https://color.firefox.com/?theme=XQAAAAKBAQAAAAAAAABBKYhm849SCia9U4KEGccwS-xMDPr4FHRGuOuek7ZXvHbkJaggZhnofz3JIA56nEKhojKEo4_x5pnGt5wg_midxJYa4ZwAVQ7O3b0-lv7rSnekynMZ6IolPcip4QSzF5XUvzw7OSAg8fJ4rcXZpYy2MZQmfgzwHZzvc6ORdDl8I0cN3zH5qHGVK08wfZ1CsRrz18gntjglN0K_kdhO5B3UDX66FuX2J2NpxBF0pKiRCXl0YY3Hy7q2pkOjcPc0X0cvS4CqfI-uBnilcQATf_-y1BpA)
+
 ---
 
 ### TODO
 - [ ] Fix hyprcursor (Maybe migrate to hyprland-git?)
 - [ ] Fix Discord screen sharing
-- [ ] Fix piper macros
-- [ ] Eww does not support linear-gradient...
