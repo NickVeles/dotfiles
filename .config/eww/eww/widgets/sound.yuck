@@ -1,0 +1,68 @@
+;; Sound
+(
+  defvar micIcon
+  "error"
+)
+
+(
+  defvar outIcon
+  "error"
+)
+
+(
+  defvar micVolume
+  "ERR%" ; initial value
+)
+
+(
+  defvar outVolume
+  "ERR%" ; initial value
+)
+
+(
+  defwidget sound [] (
+    eventbox
+    :cursor "pointer"
+    :onclick `hyprctl dispatch exec [floating] pavucontrol`
+    :class "container"
+
+    ; Output
+    (
+      box
+      :spacing 5
+      :space-evenly false
+      (
+        box
+        :class "spacer"
+        :space-evenly false
+        :spacing 5
+        (
+          image
+          :path "icons/${outIcon}.svg"
+          :image-width 18
+        )
+        (
+          label
+          :text outVolume
+        )
+      )
+
+      ; Mic
+      (
+        box
+        :class "spacer"
+        :space-evenly false
+        :spacing 5
+        (
+          image
+          :path "icons/${micIcon}.svg"
+          :image-width 18
+        )
+        (
+          label
+          :text micVolume
+        )
+      )
+    )
+  )
+)

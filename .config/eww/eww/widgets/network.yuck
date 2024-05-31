@@ -1,0 +1,31 @@
+;; Network
+(
+  defvar networkName
+  "error"
+)
+
+(
+  defvar networkDevice
+  "error"
+)
+
+(
+  defvar networkIcon
+  "error"
+)
+
+(
+  defwidget network [] (
+    eventbox
+    :cursor "pointer"
+    :class "container"
+    :onclick `hyprctl dispatch exec [floating] nm-connection-editor`
+    :tooltip " ${networkName} - ${networkDevice} "
+    (
+      image
+      :width 24
+      :path "icons/${networkIcon}.svg"
+      :image-width 16
+    )
+  )
+)

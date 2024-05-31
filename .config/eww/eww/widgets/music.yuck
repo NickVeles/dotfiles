@@ -1,0 +1,34 @@
+;; Music
+(defvar music-visible false)
+
+; (
+;   defpoll cmusic
+;   :interval "1s"
+;   :initial ""
+;   :run-while music-visible
+;   ;`playerctl metadata --format "{{ artist }} - {{ title }}"`
+;   `echo "Lieless - AVRIL LAVIGNE - I LOVE..."`
+; )
+
+(
+  defwidget music [] (
+    eventbox
+    :cursor "pointer"
+    :class "container"
+    (
+      box
+      :space-evenly false
+      (
+        image
+        :class "spacer"
+        :path "icons/music.svg"
+        :image-width 18
+      )
+      (
+        box
+        :class "spacer"
+        "Lieless - AVRIL LAVIGNE - I LOVE..."
+      )
+    )
+  )
+)
