@@ -5,7 +5,7 @@
 
 (
   defwidget workspaces [] (
-    button
+    eventbox
     :class "container"
     (
       box
