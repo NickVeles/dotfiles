@@ -6,6 +6,7 @@
 (
   defwidget workspaces [] (
     eventbox
+    :cursor "pointer"
     :class "container"
     (
       box

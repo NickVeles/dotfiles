@@ -6,7 +6,8 @@
 
 (
   defwidget kbLayout [] (
-    button
+    eventbox
+    :cursor "pointer"
     :class "container"
     :onclick `scripts/toggleKeyboard.sh`
     (

@@ -21,7 +21,8 @@
 
 (
   defwidget sound [] (
-    button
+    eventbox
+    :cursor "pointer"
     :onclick `hyprctl dispatch exec [floating] pavucontrol`
     :class "container"
 

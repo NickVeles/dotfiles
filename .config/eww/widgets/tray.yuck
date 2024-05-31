@@ -7,6 +7,7 @@
 (
   defwidget tray [] (
     eventbox
+    :cursor "pointer"
     :onhover `eww update systrayVisible=true`
     :onhoverlost `eww update systrayVisible=false`
     :class "container"
@@ -15,7 +16,7 @@
       :space-evenly false
       (
         image
-        :class "systray"
+        :width 24
         :path "icons/systray.svg"
         :image-width 16
       )

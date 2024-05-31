@@ -12,7 +12,8 @@
 
 (
   defwidget time [] (
-    button
+    eventbox
+    :cursor "pointer"
     :class "container"
     ; :onclick
     ; :onrightclick

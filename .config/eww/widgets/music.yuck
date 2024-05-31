@@ -12,7 +12,8 @@
 
 (
   defwidget music [] (
-    button
+    eventbox
+    :cursor "pointer"
     :class "container"
     (
       box

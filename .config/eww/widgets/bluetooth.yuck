@@ -23,7 +23,7 @@
     :onclick `hyprctl dispatch exec [floating] blueman-manager`
     (
       image
-      :width 20
+      :width 24
       :path "icons/${bluetoothIcon}.svg"
       :image-width 16
     )

@@ -11,7 +11,8 @@
 
 (
   defwidget battery [] (
-    button
+    eventbox
+    :cursor "pointer"
     :class "container"
     :visible batteryEnabled
     (
