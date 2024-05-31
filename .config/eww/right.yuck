@@ -1,3 +1,4 @@
+(include "widgets/timer.yuck")
 (include "widgets/sound.yuck")
 (include "widgets/network.yuck")
 (include "widgets/bluetooth.yuck")
@@ -12,6 +13,7 @@
     :halign "end"
     :spacing 10
     :space-evenly false
+    (timer)
     (sound)
     (network)
     (bluetooth)

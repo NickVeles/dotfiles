@@ -9,7 +9,7 @@
     eventbox
     :cursor "pointer"
     :class "container"
-    :onclick `scripts/toggleKeyboard.sh`
+    :onclick `scripts/toggleKeyboard.sh &`
     (
       box
       :class "spacer"
