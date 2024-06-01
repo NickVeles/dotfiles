@@ -40,6 +40,7 @@ A repository containing my linux dotfiles
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
+- `feh` - imagee viewer (`hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down"`)
 
 ---
 
