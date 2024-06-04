@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec=hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down" %f
+Name=hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down"
+Comment=Custom definition for hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down"
