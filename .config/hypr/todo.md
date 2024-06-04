@@ -1,0 +1,1 @@
+- [ ] Create `chromium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --app=https://keep.google.com/u/0/\#label/Todos` script. 

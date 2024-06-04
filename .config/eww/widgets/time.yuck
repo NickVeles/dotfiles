@@ -1,13 +1,22 @@
 ;; Time
-(defvar time-visible false)
+(
+  defvar timeState
+  false
+)
 
 (
-  defpoll time
+  defpoll timeHour
   :interval "5s"
   :initial "ERROR"
-  :run-while time-visible
   ; `date +"%I:%M %p"` ;us
   `date +"%H:%M"` ;eu
+)
+
+(
+  defpoll timeDate
+  :interval "1m"
+  :initial "ERROR"
+  `date +"%F"`
 )
 
 (
@@ -15,12 +24,12 @@
     eventbox
     :cursor "pointer"
     :class "container"
-    ; :onclick
-    ; :onrightclick
+    :onclick `eww update timeState=${!timeState}`
+    ; :onrightclick 
     (
       box
       :class "spacer"
-      time
+      { timeState ? timeDate : timeHour }
     )
   )
 )
