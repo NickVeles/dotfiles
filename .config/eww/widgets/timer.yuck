@@ -62,14 +62,16 @@
       )
       (
         box
-        :class "timer ${timerPoll}"
+        :class "${timerPoll}"
+        :style "padding-right: 4px;"
         (
           circular-progress
-          :width 16
+          :class "timer"
           :value {round((timerSeconds/initialTS)*100, 0)}
           :start-at 75
           :thickness 2
           :clockwise true
+          :width 16
         )
       )
     )

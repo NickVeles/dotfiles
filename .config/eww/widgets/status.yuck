@@ -1,0 +1,69 @@
+;; Status
+
+(
+  defvar statusVisible
+  false
+)
+
+(
+  defwidget status [] (
+    eventbox
+    :cursor "pointer"
+    :onclick `hyprctl dispatch exec [floating] "alacritty -e btop"`
+    :onhover `eww update statusVisible=true`
+    :onhoverlost `eww update statusVisible=false`
+    :class "container"
+    (
+      box
+      :space-evenly false
+      (
+        image
+        :width 24
+        :path "icons/chart.svg"
+        :image-width 16
+      )
+      (
+        revealer
+        :transition "slideright"
+        :reveal statusVisible
+        :duration "200ms"
+        (
+          box
+          :class "push"
+          :spacing 5
+          :space-evenly false
+          (
+            circular-progress
+            :class "ram"
+            :value {EWW_RAM['used_mem_perc']}
+            :start-at 75
+            :thickness 2
+            :clockwise true
+            :width 16
+            :tooltip " RAM: ${round(EWW_RAM['used_mem_perc'], 2)}% "
+          )
+          (
+            circular-progress
+            :class "cpu"
+            :value {EWW_RAM['avg']}
+            :start-at 75
+            :thickness 2
+            :clockwise true
+            :width 16
+            :tooltip " CPU: ${round(EWW_CPU['avg'], 2)}% "
+          )
+          (
+            circular-progress
+            :class "tmp"
+            :value {EWW_TEMPS['K10TEMP_TCTL']}
+            :start-at 75
+            :thickness 2
+            :clockwise true
+            :width 16
+            :tooltip " CPU: ${round(EWW_TEMPS['K10TEMP_TCTL'], 2)}C "
+          )
+        )
+      )
+    )
+  )
+)

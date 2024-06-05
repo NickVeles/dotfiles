@@ -13,6 +13,7 @@ $ib-color: rgba($color: #5B595C, $alpha: 0.67); // inactive
 $er-color: rgba($color: #FF6188, $alpha: 1.00); // error
 $wa-color: rgba($color: #FFD866, $alpha: 1.00); // warning
 $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
+$ok-color: rgba($color: #A9DC76, $alpha: 1.00); // success
 
 // Styles
 * {
@@ -52,6 +53,10 @@ $in-color: rgba($color: #65D6C4, $alpha: 1.00); // info
     padding-right: 10px;
 }
 
+.push {
+    padding: 0 4px;
+}
+
 tooltip {
     font-family: 'JetBrains Mono NF', monospace;
     background: $bg-color;
@@ -85,8 +90,23 @@ menu *:not(:first-child):hover {
     border-radius: 20px;
 }
 
-// Other
+// Progress Bars
 .timer {
     color: $ab-color;
-    padding-right: 4px;
+    background-color: $ib-color;
+}
+
+.ram {
+    color: $ok-color;
+    background-color: $ib-color;
+}
+
+.cpu {
+    color: $in-color;
+    background-color: $ib-color;
+}
+
+.tmp {
+    color: $er-color;
+    background-color: $ib-color;
 }
