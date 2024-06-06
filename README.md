@@ -51,8 +51,7 @@ A repository containing my linux dotfiles
 ### Fonts I use
 - `ttf-jetbrains-mono`
 - `ttf-jetbrains-mono-nerd`
-- `opendyslexic3` [link](https://opendyslexic.org/)
-- `opendyslexic mono` [link](https://opendyslexic.org/)
+- `otf-opendyslexic-nerd` [link](https://opendyslexic.org/)
 - `ttf-font-awesome`
 - `noto-fonts-emoji`
 
