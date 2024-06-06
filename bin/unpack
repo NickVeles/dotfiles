@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Function to extract files based on their type
+extract_file() {
+    file="$1"
+    extension="${file##*.}"
+    filename="${file%.*}"
+
+    case "$extension" in
+        "tar" | "tar.gz")
+            tar -xvf "$file" ;;
+        "zip")
+            unzip "$file" ;;
+        "7z")
+            mkdir -p "$filename" && 7z x "$file" -o"$filename" ;;
+        *)
+            echo "Unsupported file type: $extension"
+            exit 1 ;;
+    esac
+}
+
+# Main script starts here
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <file>"
+    exit 1
+fi
+
+file="$1"
+
+if [ ! -f "$file" ]; then
+    echo "File '$file' not found"
+    exit 1
+fi
+
+extract_file "$file"
