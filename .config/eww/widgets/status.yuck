@@ -45,7 +45,7 @@
           (
             circular-progress
             :class "cpu"
-            :value {EWW_RAM['avg']}
+            :value {EWW_CPU['avg']}
             :start-at 75
             :thickness 2
             :clockwise true
