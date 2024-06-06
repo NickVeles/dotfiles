@@ -42,6 +42,9 @@ A repository containing my linux dotfiles
 - `blueman` - bluetooth GUI
 - `feh` - imagee viewer (`hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down"`)
 - `chromium` - pseudo web apps
+- `btop` - task manager
+- `rofi-calc-git` - calc plugin for rofi
+- `rofi-emoji-git` - emoji plugin for rofi
 
 ---
 
