@@ -1,13 +1,8 @@
 configuration {
-  modes: [ combi ];
+  modes: [ combi, emoji, calc ];
   combi-modes: [ drun ];
   icon-theme: "black-dark"; // Tela circle
 }
-
-// TODO
-// - Emojis
-// - Calculator
-// - etc.
 
 @theme "theme"
  
