@@ -45,6 +45,7 @@ A repository containing my linux dotfiles
 - `btop` - task manager
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
+- `wtype` - keyboard simulator
 
 ---
 
