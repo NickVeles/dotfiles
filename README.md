@@ -46,6 +46,9 @@ A repository containing my linux dotfiles
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
 - `wtype` - keyboard simulator
+- `qt5-graphicaleffects` - sddm theme
+- `qt5-quickcontrols2` - sddm theme
+- `qt5-svg` - sddm theme
 
 ---
 
