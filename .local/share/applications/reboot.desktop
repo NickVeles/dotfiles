@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Reboot
+Comment=Reboots the computer
+Exec=reboot
+Icon=system-reboot
+Terminal=false
+Categories=Menu

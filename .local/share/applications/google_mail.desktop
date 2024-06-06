@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Google Mail
+Comment=Gmail
+Exec=chromium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --app=https://mail.google.com/u/0/
+Icon=gmail
+Terminal=false
+Categories=Utility

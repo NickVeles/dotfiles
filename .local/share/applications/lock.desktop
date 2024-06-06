@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Lock
+Comment=Locks your screen
+Exec=sh -c "playerctl pause; hyprlock"
+Icon=lock
+Terminal=false
+Categories=Menu

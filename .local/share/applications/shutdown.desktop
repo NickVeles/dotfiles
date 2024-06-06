@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Shutdown
+Comment=Shutdowns the computer
+Exec=shutdown 0
+Icon=system-shutdown
+Terminal=false
+Categories=Menu

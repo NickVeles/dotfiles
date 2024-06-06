@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Google Keep
+Comment=Google Keep
+Exec=chromium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --app=https://keep.google.com/u/0/
+Icon=gnome-todo
+Terminal=false
+Categories=Utility
