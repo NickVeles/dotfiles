@@ -53,6 +53,7 @@ A repository containing my linux dotfiles
 - `baobab` - disk visualization
 - `gparted` - disk management
 - `lxsession-gtk3` - authentication agent for polkit
+- `xorg-xhost` - server access control (needed for gparted)
 
 ---
 
