@@ -49,6 +49,8 @@ A repository containing my linux dotfiles
 - `qt5-graphicaleffects` - sddm theme
 - `qt5-quickcontrols2` - sddm theme
 - `qt5-svg` - sddm theme
+- `baobab` - disk visualization
+- `gparted` - disk management
 
 ---
 
