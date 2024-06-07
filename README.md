@@ -65,7 +65,7 @@ A repository containing my linux dotfiles
 - `noto-fonts-emoji`
 
 ### Other
-- Enable `ufw`, `lxpolkit`
+- Enable `ufw`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
 - Place `sddm.conf` file in `/etc/`
 - [My Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA)
