@@ -1,35 +1,32 @@
-;; Time
+;; Time Vars
 (
   defvar timeState
   false
 )
 
 (
-  defpoll timeHour
+  defpoll timeDate
   :interval "5s"
   :initial "ERROR"
-  ; `date +"%I:%M %p"` ;us
-  `date +"%H:%M"` ;eu
+  `date +"%F, %T"`
 )
 
-(
-  defpoll timeDate
-  :interval "1m"
-  :initial "ERROR"
-  `date +"%F"`
-)
-
+;; Time Widget
 (
   defwidget time [] (
     eventbox
     :cursor "pointer"
     :class "container"
     :onclick `eww update timeState=${!timeState}`
-    ; :onrightclick 
+    :onrightclick `eww open --toggle calendar`
     (
       box
       :class "spacer"
-      { timeState ? timeDate : timeHour }
+      { 
+        timeState ?
+          substring(timeDate, 0, 10) : 
+          substring(timeDate, 12, 5)
+      }
     )
   )
 )

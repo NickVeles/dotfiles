@@ -1,5 +1,8 @@
 ;; *THIS CONFIG RELIES ON THE HYPRLAND LISTENER IN $HOME/.config/hypr/scripts/listener.sh*
 
+;; Windows
+(include "widgets/calendar.yuck")
+
 ;; Bar
 (include "left.yuck")
 (include "middle.yuck")

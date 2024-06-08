@@ -110,3 +110,33 @@ menu *:not(:first-child):hover {
     color: $er-color;
     background-color: $ib-color;
 }
+
+// Calendar
+calendar {
+    // padding: 4px;
+    color: $tx-color;
+}
+
+calendar.header {
+    color: $tx-color;
+    font-weight: bold;
+}
+
+calendar.button {
+    color: $wa-color;
+}
+
+calendar:selected {
+    color: $ab-color;
+    background-color: $ib-color;
+    border-radius: 40px;
+}
+
+calendar.highlight {
+    color: #AAA;
+    font-weight: bold;
+}
+
+calendar.intermediate {
+    color: $wa-color;
+}
