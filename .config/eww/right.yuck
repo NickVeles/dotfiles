@@ -4,7 +4,6 @@
 (include "widgets/bluetooth.yuck")
 (include "widgets/battery.yuck")
 (include "widgets/kb_layout.yuck")
-(include "widgets/time.yuck")
 
 ;; Main Widget
 (
@@ -19,6 +18,5 @@
     (bluetooth)
     (battery)
     (kbLayout)
-    (time)
   )
 )
