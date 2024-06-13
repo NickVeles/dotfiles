@@ -54,6 +54,7 @@ A repository containing my linux dotfiles
 - `gparted` - disk management
 - `lxsession-gtk3` - authentication agent for polkit
 - `xorg-xhost` - server access control (needed for gparted)
+- `cups` - printing system
 
 ---
 
@@ -65,7 +66,7 @@ A repository containing my linux dotfiles
 - `noto-fonts-emoji`
 
 ### Other
-- Enable `ufw`
+- Enable `ufw`, `cups`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
 - Place `sddm.conf` file in `/etc/`
 - `btop` theme: `gruvbox_dark_v2` without background
