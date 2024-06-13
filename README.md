@@ -55,6 +55,8 @@ A repository containing my linux dotfiles
 - `lxsession-gtk3` - authentication agent for polkit
 - `xorg-xhost` - server access control (needed for gparted)
 - `cups` - printing system
+- `gutenprint` - printing tool
+- `foomatic-db-gutenprint-ppds` - drivers for printing
 
 ---
 
