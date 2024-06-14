@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Google Calendar
-Comment=Google Calendar
-Exec=chromium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --app=https://calendar.google.com/u/0/
-Icon=google-calendar
-Terminal=false
-Categories=Utility
