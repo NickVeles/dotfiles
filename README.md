@@ -68,6 +68,8 @@ A repository containing my linux dotfiles
 - `ttf-font-awesome`
 - `noto-fonts-emoji`
 
+---
+
 ### Other
 - Enable services: `ufw`, `cups`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
@@ -75,3 +77,8 @@ A repository containing my linux dotfiles
 - `btop` theme: `gruvbox_dark_v2` without background
 - [My Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA)
 - Create Firefox PWAs for Google [Mail](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/gmail.svg), [Keep](https://raw.githubusercontent.com/NickVeles/dotfiles/main/assets/keep.svg), and [Calendar](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/google-calendar.svg) (links to icons).
+
+---
+
+### Acknowledgements
+- `assets/keep.svg` is a combination of Tela Circle Icon Theme's `gnome-todo` icon with Google Keep's icon.
