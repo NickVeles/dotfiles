@@ -9,7 +9,7 @@ file="$directory/$(date +'%d_%H%M%S').png"
 # Check edit mode
 handle_mode() {
     if [ "$mode" == "edit" ]; then
-        swappy -f $(grimblast copysave "$target" "$file") -o "$file"
+        swappy -f $(grimblast copysave "$target" "$file")
     else
         grimblast copysave "$target" "$file"
     fi 
