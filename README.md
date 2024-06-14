@@ -61,6 +61,11 @@ A repository containing my linux dotfiles (WIP)
 - `thunar-archive-plugin` - archive plugin for Thunar
 - `thunar-volman` - removable devices control plugin for Thunar
 - `thunar-vcs-plugin` - GIT actions plugin for Thunar
+- `thunar-media-tags-plugin` - detailed information about media files for Thunar
+- `gvfs` - sidebar addon for Thunar
+- `tumbler` - thumbnail generator for Thunar
+- `libgsf` - open document extension support for Tumbler
+- `raw-thumbnailer` - raw file support for Tumbler
 
 ---
 
