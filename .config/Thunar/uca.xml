@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1716745571183033-1</unique-id>
+	<command>alacritty --working-directory %f</command>
+	<description>Open new terminal instance in this direcrory</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>tool_pen</icon>
+	<name>Edit Image</name>
+	<submenu></submenu>
+	<unique-id>1718366321760121-1</unique-id>
+	<command>hyprctl dispatch exec &quot;[floating;size 1200 900]&quot; gthumb %f</command>
+	<description>Use gThumb to edit the image</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+</actions>
