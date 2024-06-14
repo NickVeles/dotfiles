@@ -69,6 +69,7 @@ A repository containing my linux dotfiles (WIP)
 - `libgsf` - open document extension addon for Tumbler
 - `raw-thumbnailer` - raw file addon for Tumbler
 - `gthumb` - image viewer/editor
+- `swappy` - draw on image
 
 ---
 
