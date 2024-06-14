@@ -68,6 +68,7 @@ A repository containing my linux dotfiles (WIP)
 - `ffmpegthumbnailer` - video addon for Tumbler
 - `libgsf` - open document extension addon for Tumbler
 - `raw-thumbnailer` - raw file addon for Tumbler
+- `gthumb` - image viewer/editor
 
 ---
 
