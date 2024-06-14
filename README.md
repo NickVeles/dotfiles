@@ -82,7 +82,7 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Other
-- Enable services: `ufw`, `cups`
+- Enable services: `ufw`, `cups.service`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
 - Place `sddm.conf` file in `/etc/`
 - `btop` theme: `gruvbox_dark_v2` without background
