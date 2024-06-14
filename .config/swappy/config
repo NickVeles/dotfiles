@@ -1,2 +1,3 @@
 [Default]
-save_dir=$HOME/Pictures/Screenshots
+save_dir="$HOME/Pictures/Screenshots/$(date +'%Y_%m')"
+save_filename_format=%d_%H%M%S.png
