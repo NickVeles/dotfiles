@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Quick VLC
 Comment=Quick VLC video viewer (use within Thunar)
-Exec=hyprctl dispatch exec "[floating;center]" "vlc --height 400"
+Exec=hyprctl dispatch exec "[floating;size 1200 900;center]" vlc
 Icon=vlc
 Type=Application
 Terminal=false
