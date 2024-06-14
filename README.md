@@ -58,6 +58,7 @@ A repository containing my linux dotfiles (WIP)
 - `gutenprint` - printing tool
 - `foomatic-db-gutenprint-ppds` - drivers for printing
 - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
+- `file-roller` - archive tool
 - `thunar-archive-plugin` - archive plugin for Thunar
 - `thunar-volman` - removable devices control plugin for Thunar
 - `thunar-vcs-plugin` - GIT actions plugin for Thunar
