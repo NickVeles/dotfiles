@@ -42,7 +42,7 @@ A repository containing my linux dotfiles
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
 - `feh` - imagee viewer (`hyprctl dispatch exec [floating] "feh -B '#2D2A2E' -N --scale-down"`)
-- `chromium` - pseudo web apps
+- ~~`chromium`~~ - pseudo web apps (replaced with `firefox-pwa`)
 - `btop` - task manager
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
@@ -57,6 +57,7 @@ A repository containing my linux dotfiles
 - `cups` - printing system
 - `gutenprint` - printing tool
 - `foomatic-db-gutenprint-ppds` - drivers for printing
+- `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
 
 ---
 
