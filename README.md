@@ -64,8 +64,9 @@ A repository containing my linux dotfiles (WIP)
 - `thunar-media-tags-plugin` - detailed information about media files for Thunar
 - `gvfs` - sidebar addon for Thunar
 - `tumbler` - thumbnail generator for Thunar
-- `libgsf` - open document extension support for Tumbler
-- `raw-thumbnailer` - raw file support for Tumbler
+- `ffmpegthumbnailer` - video addon for Tumbler
+- `libgsf` - open document extension addon for Tumbler
+- `raw-thumbnailer` - raw file addon for Tumbler
 
 ---
 
