@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Quick Feh
+Comment=Quick Feh image viewer
+Exec=hyprctl dispatch exec "[floating]" "feh -g 1200x900 -B '#2D2A2E'"
+Icon=feh
+Type=Application
+Terminal=false
+Categories=Graphics;2DGraphics;Viewer;
+Path=/usr/bin
