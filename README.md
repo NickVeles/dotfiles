@@ -1,5 +1,5 @@
 # dotfiles
-A repository containing my linux dotfiles
+A repository containing my linux dotfiles (WIP)
 
 ### Config:
 - 🎨 `hyprland` - wayland compositor
