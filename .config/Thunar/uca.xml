@@ -13,12 +13,23 @@
 	<directories/>
 </action>
 <action>
-	<icon>tool_pen</icon>
+	<icon>edit</icon>
 	<name>Edit Image</name>
 	<submenu></submenu>
 	<unique-id>1718366321760121-1</unique-id>
 	<command>hyprctl dispatch exec &quot;[floating;size 1200 900]&quot; gthumb %f</command>
 	<description>Use gThumb to edit the image</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>draw-brush</icon>
+	<name>Draw on Image</name>
+	<submenu></submenu>
+	<unique-id>1718379332602003-2</unique-id>
+	<command>hyprctl dispatch exec &quot;[floating;size 1200 900;center]&quot; &quot;pinta %f&quot;</command>
+	<description>Use Pinta to draw on this image</description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<image-files/>
