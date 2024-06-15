@@ -96,5 +96,5 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Acknowledgements
-- `assets/keep.svg` is a combination of Tela Circle Icon Theme's `gnome-todo` icon with Google Keep's icon
+- `assets/keep.svg` is a combination of [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme)'s `gnome-todo` icon with Google Keep's icon
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy)
