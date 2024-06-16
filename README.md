@@ -56,6 +56,7 @@ A repository containing my linux dotfiles (WIP)
 - `xorg-xhost` - server access control (needed for gparted)
 - `cups` - printing system
 - `gutenprint` - printing tool
+- `ghostscript` - printing requirement
 - `foomatic-db-gutenprint-ppds` - drivers for printing
 - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
 - `file-roller` - archive tool
