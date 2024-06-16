@@ -84,6 +84,7 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Other
+- You can delete the `assets` folder.
 - Enable services: `ufw`, `cups.service`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
 - Place `sddm.conf` file in `/etc/`
