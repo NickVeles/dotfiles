@@ -17,6 +17,7 @@ A repository containing my linux dotfiles (WIP)
 ### Other important apps:
 - `ufw` - firewall
 - `lxappearance` - GTK theme editor (highly recommended)
+- `gnome-text-editor` - simple text editor
 - `discord` - voice chat
 - `hyprcursor` - cursor for Hyprland
 - `hyprlock` - lock screen for Hyprland
