@@ -57,7 +57,7 @@ A repository containing my linux dotfiles (WIP)
 - `cups` - printing system
 - `gutenprint` - printing tool
 - `ghostscript` - printing requirement
-- `hplip` - only for HP printers (optional)
+- `hplip` - HP printer drivers (optional)
 - `foomatic-db-gutenprint-ppds` - drivers for printing
 - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
 - `file-roller` - archive tool
