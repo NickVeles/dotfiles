@@ -18,7 +18,6 @@ A repository containing my linux dotfiles (WIP)
 - `ufw` - firewall
 - `lxappearance` - GTK theme editor (highly recommended)
 - `gnome-text-editor` - simple text editor
-- `discord` - voice chat
 - `hyprcursor` - cursor for Hyprland
 - `hyprlock` - lock screen for Hyprland
 - `hypridle` - idle state manager for Hyprland
@@ -43,7 +42,6 @@ A repository containing my linux dotfiles (WIP)
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
-- ~~`chromium`~~ - pseudo web apps (replaced with `firefox-pwa`)
 - `btop` - task manager
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
@@ -96,7 +94,7 @@ A repository containing my linux dotfiles (WIP)
 - Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA)
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google's [Gmail](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/gmail.svg), [Keep](https://raw.githubusercontent.com/NickVeles/dotfiles/main/assets/keep.svg), and [Calendar](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/google-calendar.svg) (links to icons)
-  - Create Discord PWA ([icon](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/discord.svg)) 
+  - Create Discord PWA ([icon](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/discord.svg); rename `discord.desktop.bak` to `discord.desktop` if you want standard discord)
 
 ---
 
