@@ -34,4 +34,17 @@
 	<patterns>*</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>document-print</icon>
+	<name>Print file</name>
+	<submenu></submenu>
+	<unique-id>1718538837090080-1</unique-id>
+	<command>lp %f</command>
+	<description>Use the default printer to print file</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
 </actions>
