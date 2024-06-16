@@ -83,13 +83,14 @@ A repository containing my linux dotfiles (WIP)
 
 ---
 
-### Other
-- You can delete the `assets` folder.
+### Things To Do
+- Run `cp $HOME/.local/share/Thunar/emblems/* $HOME/.local/share/icons/Tela-black-dark/symbolic/emblems/`
+- Delete the `assets` folder
 - Enable services: `ufw`, `cups.service`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`
 - Place `sddm.conf` file in `/etc/`
-- `btop` theme: `gruvbox_dark_v2` without background
-- [My Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA)
+- Use `btop` theme: `gruvbox_dark_v2` with background disabled
+- Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA)
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google's [Gmail](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/gmail.svg), [Keep](https://raw.githubusercontent.com/NickVeles/dotfiles/main/assets/keep.svg), and [Calendar](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/google-calendar.svg) (links to icons)
   - Create Discord PWA ([icon](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/discord.svg)) 
