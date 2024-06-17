@@ -22,10 +22,10 @@
 
 // ELEMENT
 element {
-    padding: 5px 10px;
+    padding: 5px 20px;
     cursor:  pointer;
     border:  0;
-    border-radius: 50%;
+    // border-radius: 50%;
 
     children: [ "element-icon", "element-text" ];
     spacing: 10px;
@@ -76,10 +76,10 @@ element-icon {
 // WINDOW
 window {
     width:            20%;
-    margin:           10 0 0 10;
+    // margin:           10 0 0 10;
     background-color: var(bg-color);
     border:           2px;
-    border-radius:    12px;
+    border-radius:    0px 0px 12px 0px;
 }
 mainbox {
     padding: 0;
@@ -97,7 +97,7 @@ textbox {
 // LIST
 listview {
     // padding:       10px 0px 0px 0px ;
-    padding:       10px ;
+    padding:       10px 0px ;
     spacing:       2px ;
     border-color:  var(lb-color);
     border:        2px solid 0px 0px ;
