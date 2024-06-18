@@ -85,7 +85,7 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Things To Do
-- Run `cp $HOME/.local/share/Thunar/emblems/* $HOME/.local/share/icons/Tela-black-dark/symbolic/emblems/`.
+- Unpack the `Tela-black-dark.tar.gz` file (modified icons).
 - Delete the `assets` folder.
 - Enable services: `ufw`, `cups.service`.
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
@@ -104,5 +104,8 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Acknowledgements
-- `assets/keep.svg` is a combination of [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme)'s `gnome-todo` icon with Google Keep's icon
-- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy)
+This repo uses direct or modified files that bypass their downloads. Here's the credit to their authors:
+- [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme) by Vince.
+- [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme) by Vince.
+- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by Matt Jolly.
+
