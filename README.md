@@ -72,6 +72,7 @@ A repository containing my linux dotfiles (WIP)
 - `gthumb` - image viewer/editor
 - `swappy` - draw on screenshots
 - `pinta` - paint-like image editor
+- `aylurs-gtk-shell` - status bar and widgets (WIP)
 
 ---
 
@@ -88,6 +89,7 @@ A repository containing my linux dotfiles (WIP)
 - Unpack the `Tela-black-dark.tar.gz` file (modified icons).
 - Delete the `assets` folder.
 - Enable services: `ufw`, `cups.service`.
+- Enable `Experimental = true` in `/etc/bluetooth/main.conf`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
