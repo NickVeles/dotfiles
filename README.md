@@ -9,7 +9,7 @@ A repository containing my linux dotfiles (WIP)
 - 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
 - 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
 - 🙂 `Tela-black-dark` - icon-theme
-- 🕥 `eww` - status Bar
+- 🕥 `aylurs-gtk-shell` - status Bar + widgets
 - 🗃️ `thunar` - file manager
 
 ---
