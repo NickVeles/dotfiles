@@ -1,9 +1,0 @@
-(include "widgets/music.yuck")
-
-;; Main Widget
-(
-  defwidget middle [] (
-    box
-    (music)
-  )
-)
