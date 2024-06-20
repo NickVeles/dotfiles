@@ -107,7 +107,7 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Acknowledgements
-This repo uses direct or modified files that bypass their downloads. Here's the credit to their authors:
+This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
 - [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme) by Vince.
 - [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme) by Vince.
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by Matt Jolly.
