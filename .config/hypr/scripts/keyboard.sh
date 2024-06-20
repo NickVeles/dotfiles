@@ -6,12 +6,12 @@ layout=$(hyprctl devices -j |
     cut -c1-2 |
     tr 'a-z' 'A-Z')
 
-if [ "$layout" -eq "PO" ]; then
-    hyprctl keyword input:kb_layout pl
-    notify-send "PL" "Changed to Polish Keyboard Layout"
+if [ "$layout" == "PO" ]; then
+    hyprctl keyword input:kb_layout us
+    notify-send $layout "Changed to US Keyboard Layout"
 else
     hyprctl keyword input:kb_layout pl
-    notify-send "US" "Changed to US Keyboard Layout"
+    notify-send $layout "Changed to Polish Keyboard Layout"
 fi
 
 paplay $HOME/.sounds/switch.mp3 --volume 36000
