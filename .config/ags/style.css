@@ -1,0 +1,168 @@
+* {
+    all: unset;
+}
+
+button {
+    padding: 2px 4px;
+}
+
+button:hover {
+    /* background: #2D2A2E; */
+    color: #FFD866;
+}
+
+/* SysTray */
+menu {
+    font-family: 'JetBrains Mono NF', monospace;
+
+    background: #2D2A2E;
+    color: #FCFCFA;
+    
+    border: #FC9867 2px solid;
+    border-radius: 12px;
+
+    padding: 10px 2px;
+}
+
+menu *:not(:first-child) {
+    padding: 2px 13px;
+    margin: 0;
+}
+
+menu *:not(:first-child):hover {
+    background: #403E41;
+    color: #FFD866;
+}
+
+.systray * {
+    padding: 4px;
+}
+
+.systray {
+    padding: 4px;
+}
+
+/* Use with 'tooltip-text' property */
+tooltip {
+    background: #2D2A2E;
+    color: #FCFCFA;
+    border: #FC9867 2px solid;
+    border-radius: 12px;
+
+    font-family: 'JetBrains Mono NF', monospace;;
+}
+
+.bar {
+    background: black;
+    color: #FCFCFA;
+
+    font-family: 'JetBrains Mono NF', monospace;
+}
+
+.distro {
+    color: #AAAAAA;
+    padding: 0px 8px;
+}
+
+.focused {
+    color: #FC9867;
+}
+
+.right button {
+    padding: 2px 8px;
+}
+
+/* Calendar root */
+calendar {
+    padding: 0px 8px;
+}
+
+/* Selected day */
+calendar:selected {
+    background-color: alpha(#FC9867, 0.93);
+    border-radius: 2px;
+    color: #2D2A2E;
+}
+
+/* Calendar window */
+calendar.view {
+    color: #FCFCFA;
+}
+
+/* Calendar header */
+calendar.header {
+    border-color: #5B595C;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-radius: 0;
+
+    color: #FFD866;
+}
+
+/* Arrow buttons */
+calendar.button {
+    color: alpha(#A9DC76, 0);
+}
+
+/* Month nums + week days */
+calendar.highlight {
+    color: #65D6C4;
+    padding: 0px;
+}
+
+/* Days of previous and next month */
+calendar:indeterminate {
+    color: #5B595C;
+}
+
+/* .clock {
+    border: #2D2A2E;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+} */
+
+.calendarbox {
+    background: #2D2A2E;
+    border: #FC9867 2px solid;
+    border-radius: 0 0 0 12px;
+
+    font-family: 'JetBrains Mono NF', monospace;
+    font-size: 16px;
+
+    padding: 24px 8px 8px 8px;
+}
+
+.circular-progress {
+    font-size: 4px;
+    background-color: #5B595C;
+    padding: 10px;
+
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.status-top {
+    padding: 24px 0 8px 0;
+}
+
+.status-bottom {
+    padding: 8px 0 24px 0;
+}
+
+.status-label {
+    padding-top: 4px;
+}
+
+/* Color Reference */
+.color-reference {
+    color: #FCFCFA; /* text */
+    color: #2D2A2E; /* background */
+    color: #403E41; /* light */
+    color: #FC9867; /* active */
+    color: #5B595C; /* inactive */
+    color: #FF6188; /* error */
+    color: #FFD866; /* warning */
+    color: #65D6C4; /* info */
+    color: #A9DC76; /* success */
+    color: #AB9DF2; /* question */
+}
