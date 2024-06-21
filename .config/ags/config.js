@@ -1,15 +1,25 @@
+// Left
 const hyprland = await Service.import("hyprland")
+
+// Center
+const mpris = await Service.import("mpris")
 const notifications = await Service.import("notifications")
+
+// Right
+const systemtray = await Service.import("systemtray")
+import pomodoro from './pomodoro.js'
+const audio = await Service.import("audio")
 const network = await Service.import("network")
 const bluetooth = await Service.import("bluetooth")
-const mpris = await Service.import("mpris")
-const audio = await Service.import("audio")
 const battery = await Service.import("battery")
-const systemtray = await Service.import("systemtray")
+
+// Other
+import { NotificationPopups } from "./notificationPopups.js"
 
 // TODO: Network() wifi hasn't been tested
 // TODO: Battery() hasn't been tested
 // TODO: Pomodoro() primary click doesn't work
+// ! I hate AGS...
 
 
 // Variables
@@ -40,27 +50,6 @@ function Workspaces() {
 }
 
 
-// Notifications Widget
-function Notifications() {
-
-    const popups = notifications.bind("popups")
-
-    return Widget.Box({
-        spacing: 4,
-        class_name: "notifications",
-        visible: popups.as(p => p.length > 0),
-        children: [
-            Widget.Icon({
-                icon: "preferences-system-notifications-symbolic",
-            }),
-            Widget.Label({
-                label: popups.as(p => p[0]?.summary || ""),
-            }),
-        ],
-    })
-}
-
-
 // SysTray Widget
 function SysTray() {
     const items = systemtray.bind("items")
@@ -81,36 +70,81 @@ function SysTray() {
 // Pomodoro Widget
 function Pomodoro() {
 
-    // Initial Seconds
-    const initSec = Variable(45 * 60)
-
-    const runTime = Variable(initSec, {
-        poll: [1000, () => initSec.value--]
-    })
+    const hovered = Variable(false)
 
     function getTooltip() {
-        const minutes = Math.floor(runTime.value / 60)
-        const seconds = runTime.value % 60
 
-        return `${minutes}m ${seconds}s`
+        // Prefix
+        const prefix = pomodoro.running ? "Stop\n" : "Start/Resume\n"
+
+        // Seconds
+        const seconds = `${pomodoro.seconds % 60}s`
+        if (pomodoro.seconds < 60)
+            return `${prefix}${seconds}`
+        
+        // Minutes
+        const minutes = `${Math.floor((pomodoro.seconds % 3600) / 60)}m`
+        if (pomodoro.seconds < 3600)
+            return `${prefix}${minutes} ${seconds}`
+
+        // Hours
+        const hours = `${Math.floor(pomodoro.seconds / 3600)}h`
+        return `${prefix}${hours} ${minutes} ${seconds}`
     }
 
-    function getIcon() {
-        const icon = Math.round((runTime.value / 2700) * 61)
+    function getIcon(hovered = false) {
+        if (hovered)
+            return `pomodoro-${pomodoro.running ? "stop" : "start"}-light`
 
-        return `pomodoro-indicator-light-${icon}`
+        return `pomodoro-indicator-light-${`${Math.round(pomodoro.seconds / pomodoro.initSeconds * 61)}`.padStart(2, '0')}`
     }
 
-    return Widget.Button({
+    const button = Widget.Button({
         class_name: "pomodoro",
-        tooltip_text: Utils.watch(getTooltip(), runTime, getTooltip),
-        on_clicked: () => print(runTime.isPolling), // TODO: FIX - isPolling always false...
-        on_secondary_click: () => initSec.value = 2700,
+        tooltip_text: getTooltip(),
+        
+        on_hover: () => {
+            hovered.value = true
+        },
+        on_clicked: () => {
+            pomodoro.running ? pomodoro.stop() : pomodoro.start()
+        },
+        on_secondary_click: () => {
+            pomodoro.stop()
+            pomodoro.seconds = pomodoro.initSeconds
+        },
 
         child: Widget.Icon({
-            icon: Utils.watch(getIcon(), runTime, getIcon)
+            icon: getIcon(),
         })
     })
+
+    pomodoro.connect('tick', () => {
+        button.tooltip_text = getTooltip()
+        button.child.icon = getIcon(hovered.value)
+    })
+
+    // A workaround for hovered to work :/
+    button.connect('enter-notify-event', () => {
+        button.tooltip_text = getTooltip()
+        hovered.value = true
+        button.child.icon = getIcon(hovered.value)
+    })
+
+    // A workaround for hovered to work :/
+    button.connect('leave-notify-event', () => {
+        button.tooltip_text = getTooltip()
+        hovered.value = false
+        button.child.icon = getIcon(hovered.value)
+    })
+
+    // A workaround for hovered to work :/
+    button.connect('clicked', () => {
+        button.child.icon = getIcon(hovered.value)
+        button.tooltip_text = getTooltip()
+    })
+
+    return button
 }
 
 
@@ -339,7 +373,6 @@ function Center() {
         children: [
             Widget.Label({ label: "😎" }),
             // Media(),
-            Notifications(),
         ],
     })
 }
@@ -594,10 +627,11 @@ function Calendar(monitor = 0) {
 
 // APP
 App.config({
-    style: "./style.css",
+    style: App.configDir + "/style.css",
     windows: [
         Bar(),
         Calendar(),
+        NotificationPopups(),
 
         // you can call it, for each monitor
         // Bar(0),
