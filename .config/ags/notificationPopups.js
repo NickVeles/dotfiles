@@ -1,7 +1,19 @@
 const notifications = await Service.import("notifications")
+
+notifications.popupTimeout = 5000
+
+// Function to limit string length
+function limit(str, maxLength, ellipsis = false) {
+    if (str.length > (maxLength - (ellipsis ? 3 : 0)))
+        return str.substring(0, maxLength) + `${ellipsis ? "..." : ""}`
+
+    return str
+}
+
 function NotificationIcon({ app_entry, app_icon, image }) {
     if (image) {
         return Widget.Box({
+            class_name: "notif-icon",
             css: `background-image: url("${image}");`
                 + "background-size: contain;"
                 + "background-repeat: no-repeat;"
@@ -48,7 +60,7 @@ function Notification(n) {
         use_markup: true,
         xalign: 0,
         justification: "left",
-        label: n.body,
+        label: limit (n.body, 100, true),
         wrap: true,
     })
 

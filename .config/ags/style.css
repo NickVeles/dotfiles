@@ -156,8 +156,10 @@ calendar:indeterminate {
 
 .notif-icon {
     font-size: 3rem;
-    border-radius: 6px;
+    min-width: 3rem;
+    min-height: 3rem;
     
+    border-radius: 6px;
 }
 
 .notif-title {
