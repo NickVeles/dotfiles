@@ -24,8 +24,8 @@ function NotificationIcon({ app_entry, app_icon, image }) {
 
 function Notification(n) {
     const icon = Widget.Box({
-        vpack: "start",
         class_name: "notif-icon",
+        vpack: "center",
         child: NotificationIcon(n),
     })
 
@@ -44,6 +44,7 @@ function Notification(n) {
     const body = Widget.Label({
         class_name: "notif-body",
         hexpand: true,
+        max_width_chars: 24,
         use_markup: true,
         xalign: 0,
         justification: "left",
@@ -60,7 +61,10 @@ function Notification(n) {
                 n.dismiss()
             },
             hexpand: true,
-            child: Widget.Label(label),
+            child: Widget.Label({
+                label: label,
+                max_width_chars: 24,
+            }),
         })),
     })
 
@@ -97,7 +101,7 @@ export function NotificationPopups(monitor = 0) {
     function onNotified(_, /** @type {number} */ id) {
         const n = notifications.getNotification(id)
         if (n)
-            list.children = [Notification(n), ...list.children]
+            list.children = [...list.children, Notification(n)]
     }
 
     function onDismissed(_, /** @type {number} */ id) {
@@ -112,8 +116,9 @@ export function NotificationPopups(monitor = 0) {
         name: `notifications${monitor}`,
         class_name: "notification-popups",
         anchor: ["bottom", "right"],
+        margins: [0, 8, 8, 0],
         child: Widget.Box({
-            css: "min-width: 2px; min-height: 2px;",
+            css: "min-width: 360px; min-height: 2px;",
             class_name: "notifications",
             vertical: true,
             child: list,

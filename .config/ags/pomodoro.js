@@ -62,7 +62,7 @@ class Pomodoro extends Service {
 
         if (this.#currentSeconds <= 0) {
             this.stop();
-            Utils.exec(App.configDir + '/scripts/pomodoroEnd.sh')
+            Utils.execAsync(App.configDir + '/scripts/pomodoroEnd.sh')
         }
     }
 

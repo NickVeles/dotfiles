@@ -3,7 +3,6 @@ const hyprland = await Service.import("hyprland")
 
 // Center
 const mpris = await Service.import("mpris")
-const notifications = await Service.import("notifications")
 
 // Right
 const systemtray = await Service.import("systemtray")
@@ -18,7 +17,6 @@ import { NotificationPopups } from "./notificationPopups.js"
 
 // TODO: Network() wifi hasn't been tested
 // TODO: Battery() hasn't been tested
-// TODO: Pomodoro() primary click doesn't work
 // ! I hate AGS...
 
 
@@ -70,6 +68,7 @@ function SysTray() {
 // Pomodoro Widget
 function Pomodoro() {
 
+    // Keep track of the widget hover status
     const hovered = Variable(false)
 
     function getTooltip() {
@@ -94,8 +93,10 @@ function Pomodoro() {
 
     function getIcon(hovered = false) {
         if (hovered)
+            // Return start/stop button
             return `pomodoro-${pomodoro.running ? "stop" : "start"}-light`
 
+        // Return the button with the current percentage
         return `pomodoro-indicator-light-${`${Math.round(pomodoro.seconds / pomodoro.initSeconds * 61)}`.padStart(2, '0')}`
     }
 
@@ -107,9 +108,11 @@ function Pomodoro() {
             hovered.value = true
         },
         on_clicked: () => {
+            // Stop/Start the countdown
             pomodoro.running ? pomodoro.stop() : pomodoro.start()
         },
         on_secondary_click: () => {
+            // Restart the countdown
             pomodoro.stop()
             pomodoro.seconds = pomodoro.initSeconds
         },
@@ -120,6 +123,11 @@ function Pomodoro() {
     })
 
     pomodoro.connect('tick', () => {
+        button.tooltip_text = getTooltip()
+        button.child.icon = getIcon(hovered.value)
+    })
+
+    pomodoro.connect('restarted', () => {
         button.tooltip_text = getTooltip()
         button.child.icon = getIcon(hovered.value)
     })
@@ -629,9 +637,9 @@ function Calendar(monitor = 0) {
 App.config({
     style: App.configDir + "/style.css",
     windows: [
+        NotificationPopups(),
         Bar(),
         Calendar(),
-        NotificationPopups(),
 
         // you can call it, for each monitor
         // Bar(0),

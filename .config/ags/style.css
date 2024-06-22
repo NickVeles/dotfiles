@@ -7,7 +7,6 @@ button {
 }
 
 button:hover {
-    /* background: #2D2A2E; */
     color: #FFD866;
 }
 
@@ -18,7 +17,7 @@ menu {
     background: #2D2A2E;
     color: #FCFCFA;
     
-    border: #FC9867 2px solid;
+    border: alpha(#FC9867, 0.93) 2px solid;
     border-radius: 12px;
 
     padding: 10px 2px;
@@ -46,10 +45,11 @@ menu *:not(:first-child):hover {
 tooltip {
     background: #2D2A2E;
     color: #FCFCFA;
-    border: #FC9867 2px solid;
+    border: alpha(#FC9867, 0.93) 2px solid;
     border-radius: 12px;
 
-    font-family: 'JetBrains Mono NF', monospace;;
+    font-family: 'JetBrains Mono NF', monospace;
+    font-size: 1rem;
 }
 
 .bar {
@@ -57,6 +57,7 @@ tooltip {
     color: #FCFCFA;
 
     font-family: 'JetBrains Mono NF', monospace;
+    font-size: 1rem;
 }
 
 .distro {
@@ -71,6 +72,8 @@ tooltip {
 .right button {
     padding: 2px 8px;
 }
+
+/* CALENDAR */
 
 /* Calendar root */
 calendar {
@@ -115,22 +118,18 @@ calendar:indeterminate {
     color: #5B595C;
 }
 
-/* .clock {
-    border: #2D2A2E;
-    border-style: solid;
-    border-width: 0 0 0 2px;
-} */
-
 .calendarbox {
     background: #2D2A2E;
-    border: #FC9867 2px solid;
+    border: alpha(#FC9867, 0.93) 2px solid;
     border-radius: 0 0 0 12px;
 
     font-family: 'JetBrains Mono NF', monospace;
-    font-size: 16px;
+    font-size: 1.1rem;
 
     padding: 24px 8px 8px 8px;
 }
+
+/* STATUS */
 
 .circular-progress {
     font-size: 4px;
@@ -151,6 +150,69 @@ calendar:indeterminate {
 
 .status-label {
     padding-top: 4px;
+}
+
+/* NOTIFICATIONS */
+
+.notif-icon {
+    font-size: 3rem;
+    border-radius: 6px;
+    
+}
+
+.notif-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    margin-left: 8px;
+}
+
+.notif-body {
+    font-size: 1rem;
+
+    margin: 4px 0px 0px 8px;
+}
+
+.notif-actions *:not(:first-child) {
+    margin-left: 4px;
+}
+
+.notif-action-button {
+    border: alpha(#5B595C, 0.67) 2px solid;
+    border-radius: 6px;
+    padding: 4px;
+
+    margin-top: 8px;
+}
+
+.notif-action-button:hover {
+    background: #403E41;
+    border-color: alpha(#FFD866, 0.67);
+}
+
+.notification {
+    background: #2D2A2E;
+    border: alpha(#FC9867, 0.93) 2px solid;
+    border-radius: 12px;
+    padding: 8px;
+
+    margin: 4px 0;
+}
+
+.notification.critical {
+    border-color: alpha(#FF6188, 0.93);
+}
+
+.notification-popups {
+    font-family: 'JetBrains Mono NF', monospace;
+}
+
+.notification-popups:first-child {
+    margin-top: 0;
+}
+
+.notification-popups:last-child {
+    margin-bottom: 0;
 }
 
 /* Color Reference */
