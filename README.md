@@ -35,7 +35,6 @@ A repository containing my linux dotfiles (WIP)
 - `socat` - reading sockets
 - `alacritty-themes` - terminal theme
 - `vlc` - media player
-- `dunst` - notify daemon
 - `ranger` - backup file manager
 - `dragon-drop` - addon for ranger
 - `Tela-circle-black-dark` - icons for dmenu
