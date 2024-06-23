@@ -44,7 +44,7 @@ A repository containing my linux dotfiles (WIP)
 - `btop` - task manager
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
-- `rofi-greenclip` - clipboard plugin for rofi
+- `cliphist` - clipboard plugin for rofi
 - `wtype` - keyboard simulator
 - `qt5-graphicaleffects` - sddm theme
 - `qt5-quickcontrols2` - sddm theme
@@ -89,7 +89,7 @@ A repository containing my linux dotfiles (WIP)
 ### Things To Do
 - Unpack the `Tela-black-dark.tar.gz` file (modified icons).
 - Delete the `assets` folder.
-- Enable services: `ufw`, `cups.service`, `greenclip.service`.
+- Enable services: `ufw`, `cups.service`.
 - Enable `Experimental = true` in `/etc/bluetooth/main.conf`
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
