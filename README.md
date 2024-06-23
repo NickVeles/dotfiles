@@ -87,6 +87,7 @@ A repository containing my linux dotfiles (WIP)
 ---
 
 ### Things To Do
+- Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
 - Unpack the `Tela-black-dark.tar.gz` file (modified icons).
 - Delete the `assets` folder.
 - Enable services: `ufw`, `cups.service`.
