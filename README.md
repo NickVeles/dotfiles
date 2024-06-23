@@ -44,7 +44,7 @@ A repository containing my linux dotfiles (WIP)
 - `btop` - task manager
 - `rofi-calc-git` - calc plugin for rofi
 - `rofi-emoji-git` - emoji plugin for rofi
-- `greenclip` - clipboard plugin for rofi
+- `rofi-greenclip` - clipboard plugin for rofi
 - `wtype` - keyboard simulator
 - `qt5-graphicaleffects` - sddm theme
 - `qt5-quickcontrols2` - sddm theme
