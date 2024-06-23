@@ -99,7 +99,7 @@ A repository containing my linux dotfiles (WIP)
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google's [Gmail](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/gmail.svg), [Keep](https://raw.githubusercontent.com/NickVeles/dotfiles/main/assets/keep.svg), and [Calendar](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/google-calendar.svg) (links to icons).
   - Create Discord PWA ([icon](https://raw.githubusercontent.com/vinceliuice/Tela-circle-icon-theme/master/src/scalable/apps/discord.svg)):
-    - rename `discord.desktop.bak` to `discord.desktop` if you want to use the standard discord app);
+    - rename `discord.desktop.bak` to `discord.desktop` if you want to use the standard discord app;
     - enable Firefox > Settings > Force links into a new window;
     - enable Firefox > Settings > Focus the existing window;
     - disable Firefox > Open links in tabs instead of new windows;
