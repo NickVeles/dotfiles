@@ -2,7 +2,6 @@
 const hyprland = await Service.import("hyprland")
 
 // Center
-const mpris = await Service.import("mpris")
 
 // Right
 const systemtray = await Service.import("systemtray")
@@ -100,7 +99,7 @@ function Pomodoro() {
         return `pomodoro-indicator-light-${`${Math.round(pomodoro.seconds / pomodoro.initSeconds * 61)}`.padStart(2, '0')}`
     }
 
-    const button = Widget.Button({
+    return Widget.Button({
         class_name: "pomodoro",
         tooltip_text: getTooltip(),
         
@@ -119,40 +118,42 @@ function Pomodoro() {
 
         child: Widget.Icon({
             icon: getIcon(),
-        })
-    })
+        }),
 
-    pomodoro.connect('tick', () => {
-        button.tooltip_text = getTooltip()
-        button.child.icon = getIcon(hovered.value)
-    })
+        setup: self => {
+            
+            pomodoro.connect('tick', () => {
+                self.tooltip_text = getTooltip()
+                self.child.icon = getIcon(hovered.value)
+            })
+        
+            pomodoro.connect('restarted', () => {
+                self.tooltip_text = getTooltip()
+                self.child.icon = getIcon(hovered.value)
+            })
+        
+            // A workaround for hovered to work :/
+            self.connect('enter-notify-event', () => {
+                self.tooltip_text = getTooltip()
+                hovered.value = true
+                self.child.icon = getIcon(hovered.value)
+            })
+        
+            // A workaround for hovered to work :/
+            self.connect('leave-notify-event', () => {
+                self.tooltip_text = getTooltip()
+                hovered.value = false
+                self.child.icon = getIcon(hovered.value)
+            })
+        
+            // A workaround for hovered to work :/
+            self.connect('clicked', () => {
+                self.child.icon = getIcon(hovered.value)
+                self.tooltip_text = getTooltip()
+            })
 
-    pomodoro.connect('restarted', () => {
-        button.tooltip_text = getTooltip()
-        button.child.icon = getIcon(hovered.value)
+        },
     })
-
-    // A workaround for hovered to work :/
-    button.connect('enter-notify-event', () => {
-        button.tooltip_text = getTooltip()
-        hovered.value = true
-        button.child.icon = getIcon(hovered.value)
-    })
-
-    // A workaround for hovered to work :/
-    button.connect('leave-notify-event', () => {
-        button.tooltip_text = getTooltip()
-        hovered.value = false
-        button.child.icon = getIcon(hovered.value)
-    })
-
-    // A workaround for hovered to work :/
-    button.connect('clicked', () => {
-        button.child.icon = getIcon(hovered.value)
-        button.tooltip_text = getTooltip()
-    })
-
-    return button
 }
 
 
@@ -379,8 +380,7 @@ function Center() {
         class_name: "middle",
         spacing: 4,
         children: [
-            Widget.Label({ label: "😎" }),
-            // Media(),
+            // Widget.Label({ label: "😎" }),
         ],
     })
 }
@@ -581,24 +581,22 @@ function Status() {
 }
 
 
-// Calendar Widget
-const calendar = Widget.Calendar({
-
-    class_name: "calendar",
-    // cursor: "pointer".
-    sensitive: false,
-
-    showDayNames: true,
-    showDetails: false,
-    showHeading: true,
-    showWeekNumbers: false,
-})
-
-
 // Calendar Wrapper
 function CalendarWrapper() {
 
-    const wrapper = Widget.EventBox({
+    const calendar = Widget.Calendar({
+    
+        class_name: "calendar",
+        // cursor: "pointer".
+        sensitive: false,
+    
+        showDayNames: true,
+        showDetails: false,
+        showHeading: true,
+        showWeekNumbers: false,
+    })
+
+    return Widget.EventBox({
         child: Widget.Box({
             class_name: "calendarbox",
             vertical: true,
@@ -606,15 +604,15 @@ function CalendarWrapper() {
                 calendar,
                 ...Status(),
             ]
-        })
+        }),
+        
+        setup: self => {
+            // A workaround for calendarVisible to work :/
+            self.connect('leave-notify-event', () => {
+                calendarVisible.value = false
+            })
+        },
     })
-
-    // A workaround for calendarVisible to work :/
-    wrapper.connect('leave-notify-event', () => {
-        calendarVisible.value = false
-    })
-
-    return wrapper
 }
 
 
@@ -622,8 +620,8 @@ function CalendarWrapper() {
 function Calendar(monitor = 0) {
 
     return Widget.Window({
-        visible: calendarVisible.bind(),
         name: `calendar-${monitor}`,
+        visible: calendarVisible.bind(),
         monitor,
         anchor: ["top", "right"],
         exclusivity: "normal",

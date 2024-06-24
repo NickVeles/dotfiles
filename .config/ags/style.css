@@ -154,6 +154,32 @@ calendar:indeterminate {
 
 /* NOTIFICATIONS */
 
+.notification {
+    background: #2D2A2E;
+    color: #FCFCFA;
+    border: alpha(#FC9867, 0.93) 2px solid;
+    border-radius: 12px;
+    padding: 8px;
+
+    margin: 4px 0;
+}
+
+.notification.critical {
+    border-color: alpha(#FF6188, 0.93);
+}
+
+.notification-popups {
+    font-family: 'JetBrains Mono NF', monospace;
+}
+
+.notification-popups:first-child {
+    margin-top: 0;
+}
+
+.notification-popups:last-child {
+    margin-bottom: 0;
+}
+
 .notif-icon {
     font-size: 3rem;
     min-width: 3rem;
@@ -190,31 +216,6 @@ calendar:indeterminate {
 .notif-action-button:hover {
     background: #403E41;
     border-color: alpha(#FFD866, 0.67);
-}
-
-.notification {
-    background: #2D2A2E;
-    border: alpha(#FC9867, 0.93) 2px solid;
-    border-radius: 12px;
-    padding: 8px;
-
-    margin: 4px 0;
-}
-
-.notification.critical {
-    border-color: alpha(#FF6188, 0.93);
-}
-
-.notification-popups {
-    font-family: 'JetBrains Mono NF', monospace;
-}
-
-.notification-popups:first-child {
-    margin-top: 0;
-}
-
-.notification-popups:last-child {
-    margin-bottom: 0;
 }
 
 /* Color Reference */
