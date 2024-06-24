@@ -74,6 +74,7 @@ A repository containing my linux dotfiles (WIP)
 - `pinta` - paint-like image editor
 - `aylurs-gtk-shell` - status bar and widgets (WIP)
 - `gnome-bluetooth-3.0` - AGS dependency
+- `brightnessctl` - brightness control
 
 ---
 
