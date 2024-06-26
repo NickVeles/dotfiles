@@ -85,6 +85,7 @@ A repository containing my linux dotfiles (WIP)
 - `ttf-jetbrains-mono-nerd`
 - `otf-opendyslexic-nerd` [link](https://opendyslexic.org/)
 - `ttf-font-awesome`
+- `noto-fonts`
 - `noto-fonts-emoji`
 
 ---
