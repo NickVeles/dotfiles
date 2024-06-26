@@ -1,0 +1,1 @@
+{ echo "Clear clipboard history"; cliphist list; } | rofi -dmenu -p "Clipboard" | xargs -r -I '{}' sh -c '[ "{}" = "Clear clipboard history" ] && cliphist wipe || cliphist decode "{}" | wl-copy'
