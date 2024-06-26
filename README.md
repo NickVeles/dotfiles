@@ -16,6 +16,7 @@ A repository containing my linux dotfiles (WIP)
 
 ### Other important apps:
 - `ufw` - firewall
+- `nwg-look` - gtk theme editor
 - `gnome-text-editor` - simple text editor
 - `hyprcursor` - cursor for Hyprland
 - `hyprlock` - lock screen for Hyprland
