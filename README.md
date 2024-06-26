@@ -75,6 +75,8 @@ A repository containing my linux dotfiles (WIP)
 - `aylurs-gtk-shell` - status bar and widgets (WIP)
 - `gnome-bluetooth-3.0` - AGS dependency
 - `brightnessctl` - brightness control
+- `neovim` - in-terminal text editor
+- `visual-studio-code-bin` - main code editor
 
 ---
 
