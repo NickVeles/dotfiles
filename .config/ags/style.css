@@ -33,14 +33,6 @@ menu *:not(:first-child):hover {
     color: #FFD866;
 }
 
-.systray * {
-    padding: 4px;
-}
-
-.systray {
-    padding: 4px;
-}
-
 /* Use with 'tooltip-text' property */
 tooltip {
     background: #2D2A2E;
