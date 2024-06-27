@@ -116,7 +116,7 @@ Some day I'll surely create an install script that does all these things. For no
 1. Open the `.config/hypr/hyprland.conf` file.
 2. Find the line with `env = GTK_THEME,Current-Theme`, where `Current-Theme` is the placeholder for your current theme.
 3. Change `Current-Theme` to the name of your desired theme.
-  - e.g. `env = GTK_THEME,Arc-Dark`
+    - e.g. `env = GTK_THEME,Arc-Dark`
 4. Save the file and either reboot your computer or exit to SDDM.
 
 
