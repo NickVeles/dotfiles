@@ -1,7 +1,7 @@
 configuration {
   modes: [ combi, emoji, calc ];
   combi-modes: [ drun ];
-  icon-theme: "black-dark"; // Tela circle
+  icon-theme: "Papirus-Dark"; // Tela circle
 }
 
 @theme "theme"

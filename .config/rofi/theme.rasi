@@ -12,6 +12,7 @@
     er-color:                    rgba ( 255, 97, 136, 100 % );  // #FF6188 error
     wa-color:                    rgba ( 255, 216, 102, 100 % ); // #FFD866 warning
     in-color:                    rgba ( 101, 214, 196, 100 % ); // #65D6C4 info
+    sh-color:                    rgba ( 26, 26, 26, 93 % );     // #1A1A1AEE shadow
 
 
     spacing:                     10;
