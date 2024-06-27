@@ -1,7 +1,7 @@
 # dotfiles
 A repository containing my linux dotfiles (WIP)
 
-### Config:
+## Config:
 - 🎨 `hyprland` - wayland compositor
 - 🐚 `zsh` with `powerlevel10k` - shell + theme
 - 💻 `alacritty` - termianl
@@ -14,7 +14,7 @@ A repository containing my linux dotfiles (WIP)
 
 ---
 
-### Other important apps:
+## Other important apps:
 - `ufw` - firewall
 - `nwg-look` - gtk theme editor
 - `gnome-text-editor` - simple text editor
@@ -80,7 +80,7 @@ A repository containing my linux dotfiles (WIP)
 
 ---
 
-### Fonts I use
+## Fonts I use
 - `ttf-jetbrains-mono`
 - `ttf-jetbrains-mono-nerd`
 - `otf-opendyslexic-nerd` [link](https://opendyslexic.org/)
@@ -90,7 +90,7 @@ A repository containing my linux dotfiles (WIP)
 
 ---
 
-### Things To Do
+## Things To Do
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
 - Unpack the `Tela-black-dark.tar.gz` file (modified icons).
 - Delete the `assets` folder.
@@ -109,11 +109,24 @@ A repository containing my linux dotfiles (WIP)
     - disable Firefox > Open links in tabs instead of new windows;
     - enable Discord > User Settings > Notifications > Enable Desktop Notifications.
 
+Some day I'll surely create an install script that does all these things. For now, it's all manual.
+
 ---
 
-### Acknowledgements
+## FAQ
+
+### How to change the GTK theme?
+1. Open the `.config/hypr/hyprland.conf` file.
+2. Find the line that `env = GTK_THEME,Current-Theme`, where `Current-Theme` is the placeholder for your current theme.
+3. Change `Current-Theme` to the name of your desired theme.
+  - e.g. `env = GTK_THEME,Arc-Dark`
+4. Save the file and either reboot your computer or exit to SDDM.
+
+---
+
+## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
-- [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme) by Vince.
-- [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme) by Vince.
-- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by Matt Jolly.
+- [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme) by [Vince](https://github.com/vinceliuice/).
+- [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme) by [Vince](https://github.com/vinceliuice/).
+- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
 
