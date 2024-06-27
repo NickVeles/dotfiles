@@ -3,18 +3,25 @@ A repository containing my linux dotfiles (WIP)
 
 
 ## Config:
-- 🎨 `hyprland` - wayland compositor
-- 🐚 `zsh` with `powerlevel10k` - shell + theme
-- 💻 `alacritty` - termianl
-- 🔍 `rofi-wayland` - dmenu
-- 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
-- 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
-- 🙂 `Papirus-Dark` - icon-theme
-- 🕥 `aylurs-gtk-shell` - status Bar + widgets
-- 🗃️ `thunar` - file manager
+- 🎨 Hyprland - window manager
+- 🐚 Zsh with PowerLevel10K - shell + theme
+- 💻 Alacritty - termianl
+- 🔍 Rofi - dmenu
+- 🖱️ Bibata Modern Ice - cursor-theme + hyprcursor
+- 📂 `workinprogress` - gtk-theme (5px)
+- 🙂 Papirus - icon-theme
+- 🕥 AGS - status Bar + widgets
+- 🗃️ Thunar - file manager
 
 
-## Other important apps:
+## Dependencies:
+- `hyprland` - window manager
+- `zsh` - shell
+- `powerlevel10k` - zsh theme
+- `alacritty` - terminal
+- `bibata-cursor-theme` - cursor theme
+- `aylurs-gtk-shell` - widgets + bar
+- `thunar` - file explorer
 - `ufw` - firewall
 - `nwg-look` - gtk theme editor
 - `gnome-text-editor` - simple text editor
@@ -38,6 +45,7 @@ A repository containing my linux dotfiles (WIP)
 - `ranger` - backup file manager
 - `dragon-drop` - addon for ranger
 - `papirus-icon-theme` - icons for dmenu
+- `papirus-folders-git` - folder color changer
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
