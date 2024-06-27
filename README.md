@@ -1,6 +1,7 @@
 # dotfiles
 A repository containing my linux dotfiles (WIP)
 
+
 ## Config:
 - 🎨 `hyprland` - wayland compositor
 - 🐚 `zsh` with `powerlevel10k` - shell + theme
@@ -12,7 +13,6 @@ A repository containing my linux dotfiles (WIP)
 - 🕥 `aylurs-gtk-shell` - status Bar + widgets
 - 🗃️ `thunar` - file manager
 
----
 
 ## Other important apps:
 - `ufw` - firewall
@@ -78,7 +78,6 @@ A repository containing my linux dotfiles (WIP)
 - `neovim` - in-terminal text editor
 - `visual-studio-code-bin` - main code editor
 
----
 
 ## Fonts I use
 - `ttf-jetbrains-mono`
@@ -88,7 +87,6 @@ A repository containing my linux dotfiles (WIP)
 - `noto-fonts`
 - `noto-fonts-emoji`
 
----
 
 ## Things To Do
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
@@ -111,7 +109,6 @@ A repository containing my linux dotfiles (WIP)
 
 Some day I'll surely create an install script that does all these things. For now, it's all manual.
 
----
 
 ## FAQ
 
@@ -122,7 +119,6 @@ Some day I'll surely create an install script that does all these things. For no
   - e.g. `env = GTK_THEME,Arc-Dark`
 4. Save the file and either reboot your computer or exit to SDDM.
 
----
 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
