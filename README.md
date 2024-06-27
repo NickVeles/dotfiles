@@ -9,7 +9,7 @@ A repository containing my linux dotfiles (WIP)
 - 🔍 `rofi-wayland` - dmenu
 - 🖱️ `Bibata-Modern-Ice` - cursor-theme + hyprcursor
 - 📂 `Orchis-Orange-Dark` - gtk-theme (5px)
-- 🙂 `Tela-black-dark` - icon-theme
+- 🙂 `Papirus-Dark` - icon-theme
 - 🕥 `aylurs-gtk-shell` - status Bar + widgets
 - 🗃️ `thunar` - file manager
 
@@ -37,7 +37,7 @@ A repository containing my linux dotfiles (WIP)
 - `vlc` - media player
 - `ranger` - backup file manager
 - `dragon-drop` - addon for ranger
-- `Tela-circle-black-dark` - icons for dmenu
+- `papirus-icon-theme` - icons for dmenu
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
@@ -90,10 +90,9 @@ A repository containing my linux dotfiles (WIP)
 
 ## Things To Do
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
-- Unpack the `Tela-black-dark.tar.gz` file (modified icons).
-- Delete the `assets` folder.
 - Enable services: `ufw`, `cups.service`.
-- Enable `Experimental = true` in `/etc/bluetooth/main.conf`
+- Enable `Experimental = true` in `/etc/bluetooth/main.conf`.
+- Run `papirus-folders -C black`.
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
@@ -122,7 +121,5 @@ Some day I'll surely create an install script that does all these things. For no
 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
-- [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme) by [Vince](https://github.com/vinceliuice/).
-- [Tela Circle Icon Theme](https://github.com/vinceliuice/Tela-circle-icon-theme) by [Vince](https://github.com/vinceliuice/).
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
 
