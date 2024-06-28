@@ -1,6 +1,6 @@
 #!/bin/bash
 
-microphone="alsa_input.pci-0000_07_00.4.analog-stereo"
+microphone="alsa_input.pci-0000_07_00.4.analog-stereo.4"
 # Toggle the source
 pamixer --toggle-mute --source "$microphone"
 
