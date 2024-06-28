@@ -85,6 +85,7 @@ A repository containing my linux dotfiles (WIP)
 - `brightnessctl` - brightness control
 - `neovim` - in-terminal text editor
 - `visual-studio-code-bin` - main code editor
+- `piper` - mouse control tool
 
 
 ## Fonts I use
