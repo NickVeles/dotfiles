@@ -86,6 +86,8 @@ A repository containing my linux dotfiles (WIP)
 - `neovim` - in-terminal text editor
 - `visual-studio-code-bin` - main code editor
 - `piper` - mouse control tool
+ 
+- `ulauncher-git` - I'm only checking it out for now.
 
 
 ## Fonts I use
