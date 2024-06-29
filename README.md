@@ -87,9 +87,6 @@ A repository containing my linux dotfiles (WIP)
 - `visual-studio-code-bin` - main code editor
 - `piper` - mouse config tool
 
-...
-- `ulauncher-git` - I'm only checking it out for now.
-
 
 ## Fonts I use
 - `ttf-jetbrains-mono`
