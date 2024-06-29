@@ -161,6 +161,7 @@ function Pomodoro() {
 function Speaker() {
 
     const icons = {
+        101: "overamplified",
         67: "high",
         34: "medium",
         1: "low",
@@ -168,10 +169,10 @@ function Speaker() {
     }
 
     function getIcon() {
-        const icon = audio.speaker.is_muted ? 0 : [67, 34, 1, 0].find(
+        const icon = audio.speaker.is_muted ? 0 : [101, 67, 34, 1, 0].find(
             threshold => threshold <= audio.speaker.volume * 100)
 
-        return `audio-volume-${icons[icon]}`
+        return `audio-volume-${icons[icon]}-symbolic`
     }
 
     function getVolume() {
@@ -208,7 +209,7 @@ function Microphone() {
         const icon = audio.microphone.is_muted ? 0 : [67, 34, 1, 0].find(
             threshold => threshold <= audio.microphone.volume * 100)
 
-        return `mic-volume-${icons[icon]}`
+        return `microphone-sensitivity-${icons[icon]}-symbolic`
     }
 
     function getVolume() {
