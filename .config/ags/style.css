@@ -213,7 +213,9 @@ calendar:indeterminate {
 .color-reference {
     color: #FCFCFA; /* text */
     color: #2D2A2E; /* background */
-    color: #403E41; /* light */
+    color: #221F22; /* background - dark */
+    color: #19181A; /* background - darkest */
+    color: #403E41; /* background - light */
     color: #FC9867; /* active */
     color: #5B595C; /* inactive */
     color: #FF6188; /* error */
