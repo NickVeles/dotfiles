@@ -130,16 +130,6 @@ Some day I'll surely create an install script that does all these things. For no
     - e.g. `env = GTK_THEME,Arc-Dark`
 4. Save the file and either reboot your computer or exit to SDDM.
 
-### Microphone mute hotkey doesn't work.
-1. Run `pamixer --list-sources` in the terminal.
-2. Find the line with your microphone.
-    - it should look like this: `130 "alsa_input.pci-0000_07_00.4.analog-stereo.4" "Suspended" "Starship/Matisse HD Audio Controller Analog Stereo"`.
-3. Copy the second column of this line.
-    - `"alsa_input.pci-0000_07_00.4.analog-stereo.4"` in example above.
-4. Open the `.config/hypr/scripts/micToggle.sh` file.
-5. Change the value of `$microphone` to your copy.
-    - e.g. `$microphone="alsa_input.pci-0000_07_00.4.analog-stereo.4"`
-
 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
