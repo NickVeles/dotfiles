@@ -8,7 +8,7 @@ A repository containing my linux dotfiles (WIP)
 - 💻 Alacritty - termianl
 - 🔍 Rofi - dmenu
 - 🖱️ Bibata Modern Ice - cursor-theme + hyprcursor
-- 📂 WhiteSur - gtk-theme
+- 📂 Gruvbox - gtk-theme
 - 🙂 Papirus - icon-theme
 - 🕥 AGS - status Bar + widgets
 - 🗃️ Thunar - file manager
@@ -117,6 +117,7 @@ A repository containing my linux dotfiles (WIP)
     - enable Firefox > Settings > Focus the existing window;
     - disable Firefox > Open links in tabs instead of new windows;
     - enable Discord > User Settings > Notifications > Enable Desktop Notifications.
+- Install the [Gruvbox-GTK-Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme).
 
 Some day I'll surely create an install script that does all these things. For now, it's all manual.
 
