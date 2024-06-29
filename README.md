@@ -108,7 +108,7 @@ A repository containing my linux dotfiles (WIP)
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
-- Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJBAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqocQc91Cs8BSRjAdUZ-EbHk3viB0kEE19P7GXcBDpvMWR7cCYVEqhuz9NvptWJMJWAiZqxazRDTZ5stfYm_GEAWVeZTKD0A16gkKKy8bNoYLH5qKlsJdne2my-_PT_etjJ8MIq9NB_atg20GoNf_f0yRR).
+- Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrpUUS8pk1lgw-fo1dUUwucZy9PF5QD42mXw5Gdw3u0GjsI_ZOrfoA8vgabTq5sZZi7KLPZzST7--5QEzSxcXpBm6_bYrR150hSZqkcSD2Ff_96ujZY).
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google Gmail, Keep, and Calendar.
   - Create Discord PWA:
