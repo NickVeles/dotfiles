@@ -8,7 +8,7 @@ A repository containing my linux dotfiles (WIP)
 - 💻 Alacritty - termianl
 - 🔍 Rofi - dmenu
 - 🖱️ Bibata Modern Ice - cursor-theme + hyprcursor
-- 📂 `workinprogress` - gtk-theme
+- 📂 WhiteSur - gtk-theme
 - 🙂 Papirus - icon-theme
 - 🕥 AGS - status Bar + widgets
 - 🗃️ Thunar - file manager
@@ -108,7 +108,7 @@ A repository containing my linux dotfiles (WIP)
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
-- Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJEAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vzrqxfgMs1s9RfWSg3eE4Q0ADIvqshDOXUHYRVr3fC7TZonEoADBBEvOqc1gzFmbWjo-fMQu3IKPXp_2NelOdIJcuxVNVhkeEiZ2d_s23iQ2f_7Aj2AA).
+- Add my [Firefox theme](https://color.firefox.com/?theme=XQAAAAJSAgAAAAAAAABBKYhm849SCicxcUEYWXcGHf3p79EhVPXpIZrHAQWRl-Xj7UBmqXiG5wsXaL1ei0ksRAZcdZKRsFsq0aumeRoYoFBgVqqVSrjrXjE9g6WCrDK3H57ewuq5UH2Vw__5oBNYn6Nht9OYQoY77X8xVKBamAkH1_pGP1tH9eonM18oEUlsavVANpmyMt0uPgdrLvmwcYLdDvlfraS7IP8I9XeqodbvSjmFHuWlM3mec8JTBLrc823vqTlGEgGDqshSEiuLYm-HFzsaSmCwROgQVxfC1nb31bTCSEVn_KRc8TCPhGdNf6w6csWB4yDJtlri0S10LEqwLMjjZFr16LjZiNnw_vJA04ZVg59zKtgX9Xy1zPuEk3I).
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google Gmail, Keep, and Calendar.
   - Create Discord PWA:
