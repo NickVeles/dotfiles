@@ -19,7 +19,7 @@ A repository containing my linux dotfiles (WIP)
 ⚠ This is very WIP. Do at your own risk.
 
 1. Install all the dependencies.
-2. Run `git clone https://github.com/NickVeles/dotfiles/`.
+2. Run `git clone https://github.com/NickVeles/dotfiles/` .
 3. Extract the cloned folder to your home directory.
 4. Do all things in **Things To Do** section.
 
