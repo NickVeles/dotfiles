@@ -132,4 +132,5 @@ Some day I'll (surely) create an install script that does all these things. For 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
+- Custom gruvbox cursors were created with [bibata.live](https://www.bibata.live/studio) by [Abdulkaiz Khatri](https://github.com/ful1e5).
 
