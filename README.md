@@ -9,7 +9,7 @@ A repository containing my linux dotfiles (WIP)
 - 🔍 Rofi - dmenu
 - 🖱️ Bibata Modern Ice - cursor-theme + hyprcursor
 - 📂 Gruvbox - gtk-theme
-- 🙂 Papirus - icon-theme
+- 🙂 Gruvbox Plus Dark - icon-theme
 - 🕥 AGS - status Bar + widgets
 - 🗃️ Thunar - file manager
 
@@ -44,8 +44,8 @@ A repository containing my linux dotfiles (WIP)
 - `vlc` - media player
 - `ranger` - backup file manager
 - `dragon-drop` - addon for ranger
-- `papirus-icon-theme` - icons for dmenu
-- `papirus-folders-git` - folder color changer
+- `gruvbox-plus-icon-theme-git` - main icons
+- `papirus-icon-theme` - backup icons
 - `bluez` - bluetooth
 - `bluez-utils` - bluetooth
 - `blueman` - bluetooth GUI
