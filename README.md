@@ -16,7 +16,7 @@ A repository containing my linux dotfiles (WIP)
 
 ## Install
 
-You can manually install all deps with this command:
+### You can manually install all deps with this command:
 ```
 yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer ranger dragon-drop file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat
 ```
@@ -117,7 +117,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
   - `socat` - reading sockets
 </details>
 
-You can install all optional deps with:
+### You can install all optional deps with:
 ```
 yay -S gnome-text-editor neovim visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp
 ```
@@ -137,13 +137,23 @@ yay -S gnome-text-editor neovim visual-studio-code-bin baobab xorg-xhost gparted
   - `gimp` - raster graphics editor
 </details>
 
-## Fonts I use
-- `ttf-jetbrains-mono`
-- `ttf-jetbrains-mono-nerd`
-- `otf-opendyslexic-nerd` [link](https://opendyslexic.org/)
-- `ttf-font-awesome`
-- `noto-fonts`
-- `noto-fonts-emoji`
+## Fonts
+
+### You can install the fonts with:
+```
+yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font-awesome noto-fonts noto-fonts-emoji
+```
+
+<details>
+  <summary><h3>Description</h3></summary>
+  
+  - `ttf-jetbrains-mono`
+  - `ttf-jetbrains-mono-nerd`
+  - `otf-opendyslexic-nerd` - [link](https://opendyslexic.org/)
+  - `ttf-font-awesome`
+  - `noto-fonts`
+  - `noto-fonts-emoji`
+</details>
 
 
 ## Things To Do
