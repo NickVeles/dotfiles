@@ -101,7 +101,7 @@ A repository containing my linux dotfiles (WIP)
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
 - Enable services: `ufw`, `cups.service`.
 - Enable `Experimental = true` in `/etc/bluetooth/main.conf`.
-- Run `papirus-folders -C black`.
+- Unpack the `.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz` file.
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
