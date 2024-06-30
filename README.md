@@ -31,7 +31,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 <details>
   <summary><h3>Description</h3></summary>
 
-  This software required by the config.
+  This software is required by the config.
   
   #### Window Management
   - `hyprland` - window manager
