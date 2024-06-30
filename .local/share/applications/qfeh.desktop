@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Quick Feh
 Comment=Quick Feh image viewer
-Exec=hyprctl dispatch exec "[floating]" "feh -g 1200x900 -B '#2D2A2E'"
+Exec=hyprctl dispatch exec "[floating]" "feh -g 1200x900 -B '#1D2021'"
 Icon=feh
 Type=Application
 Terminal=false
