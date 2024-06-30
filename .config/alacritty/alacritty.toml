@@ -1,10 +1,10 @@
 import = [
-  "/usr/lib/node_modules/alacritty-themes/themes/Monokai-Pro.toml"
+  "/usr/lib/node_modules/alacritty-themes/themes/Gruvbox-Dark.toml"
 ]
 
 [window]
 dynamic_padding = true
-opacity = 0.85
+opacity = 0.9
 
   [window.padding]
   x = 5
