@@ -7,17 +7,17 @@ button {
 }
 
 button:hover {
-    color: #FFD866;
+    color: #8EC07C;
 }
 
 /* SysTray */
 menu {
     font-family: 'JetBrains Mono NF', monospace;
 
-    background: #2D2A2E;
-    color: #FCFCFA;
+    background: #1D2021;
+    color: #FBF1C7;
     
-    border: alpha(#FC9867, 0.93) 2px solid;
+    border: alpha(#FBF1C7, 0.93) 2px solid;
     border-radius: 12px;
 
     padding: 10px 2px;
@@ -29,15 +29,15 @@ menu *:not(:first-child) {
 }
 
 menu *:not(:first-child):hover {
-    background: #403E41;
-    color: #FFD866;
+    background: #303C3A;
+    color: #FABD2F;
 }
 
 /* Use with 'tooltip-text' property */
 tooltip {
-    background: #2D2A2E;
-    color: #FCFCFA;
-    border: alpha(#FC9867, 0.93) 2px solid;
+    background: #1D2021;
+    color: #FBF1C7;
+    border: alpha(#FBF1C7, 0.93) 2px solid;
     border-radius: 12px;
 
     font-family: 'JetBrains Mono NF', monospace;
@@ -46,7 +46,7 @@ tooltip {
 
 .bar {
     background: black;
-    color: #FCFCFA;
+    color: #FBF1C7;
 
     font-family: 'JetBrains Mono NF', monospace;
     font-size: 1rem;
@@ -57,7 +57,7 @@ tooltip {
 }
 
 .focused {
-    color: #FC9867;
+    color: #FE8019;
 }
 
 .right button {
@@ -69,49 +69,51 @@ tooltip {
 /* Calendar root */
 calendar {
     padding: 0px 8px;
+    color: #FBF1C7;
 }
 
 /* Selected day */
 calendar:selected {
-    background-color: alpha(#FC9867, 0.93);
-    border-radius: 2px;
-    color: #2D2A2E;
+    background-color: alpha(#8EC07C, 0.93);
+    border-radius: 6px;
+    color: #1D2021;
 }
 
 /* Calendar window */
 calendar.view {
-    color: #FCFCFA;
+    color: #FBF1C7;
 }
 
 /* Calendar header */
 calendar.header {
-    border-color: #5B595C;
+    border-color: #928374;
     border-width: 0 0 2px 0;
     border-style: solid;
     border-radius: 0;
 
-    color: #FFD866;
+    color: #FABD2F;
 }
 
 /* Arrow buttons */
 calendar.button {
-    color: alpha(#A9DC76, 0);
+    color: alpha(#B8BB26, 0);
 }
 
 /* Month nums + week days */
 calendar.highlight {
-    color: #65D6C4;
+    color: #458588;
     padding: 0px;
 }
 
 /* Days of previous and next month */
 calendar:indeterminate {
-    color: #5B595C;
+    color: #928374;
 }
 
 .calendarbox {
-    background: #2D2A2E;
-    border: alpha(#FC9867, 0.93) 2px solid;
+    background: #1D2021;
+    color: #FBF1C7;
+    border: alpha(#FBF1C7, 0.93) 2px solid;
     border-radius: 0 0 0 12px;
 
     font-family: 'JetBrains Mono NF', monospace;
@@ -124,7 +126,7 @@ calendar:indeterminate {
 
 .circular-progress {
     font-size: 4px;
-    background-color: #5B595C;
+    background-color: #665C54;
     padding: 10px;
 
     min-width: 50px;
@@ -146,9 +148,9 @@ calendar:indeterminate {
 /* NOTIFICATIONS */
 
 .notification {
-    background: #2D2A2E;
-    color: #FCFCFA;
-    border: alpha(#FC9867, 0.93) 2px solid;
+    background: #1D2021;
+    color: #FBF1C7;
+    border: alpha(#FBF1C7, 0.93) 2px solid;
     border-radius: 12px;
     padding: 8px;
 
@@ -156,7 +158,7 @@ calendar:indeterminate {
 }
 
 .notification.critical {
-    border-color: alpha(#FF6188, 0.93);
+    border-color: alpha(#FB4934, 0.93);
 }
 
 .notification-popups {
@@ -197,7 +199,7 @@ calendar:indeterminate {
 }
 
 .notif-action-button {
-    border: alpha(#5B595C, 0.67) 2px solid;
+    border: alpha(#FBF1C7, 0.67) 2px solid;
     border-radius: 6px;
     padding: 4px;
 
@@ -205,22 +207,20 @@ calendar:indeterminate {
 }
 
 .notif-action-button:hover {
-    background: #403E41;
-    border-color: alpha(#FFD866, 0.67);
+    background: #303C3A;
+    border-color: alpha(#8EC07C, 0.67);
 }
 
 /* Color Reference */
 .color-reference {
-    color: #FCFCFA; /* text */
-    color: #2D2A2E; /* background */
-    color: #221F22; /* background - dark */
-    color: #19181A; /* background - darkest */
-    color: #403E41; /* background - light */
-    color: #FC9867; /* active */
-    color: #5B595C; /* inactive */
-    color: #FF6188; /* error */
-    color: #FFD866; /* warning */
-    color: #65D6C4; /* info */
-    color: #A9DC76; /* success */
-    color: #AB9DF2; /* question */
+    color: #FBF1C7; /* text */
+    color: #1D2021; /* background */
+    color: #303C3A; /* background - light */
+    color: #8EC07C; /* active */
+    color: #928374; /* inactive */
+    color: #FB4934; /* error */
+    color: #FABD2F; /* warning */
+    color: #458588; /* info */
+    color: #B8BB26; /* success */
+    color: #D3869B; /* question */
 }
