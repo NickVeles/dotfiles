@@ -19,7 +19,6 @@ A repository containing my linux dotfiles (WIP)
 - `zsh` - shell
 - `powerlevel10k` - zsh theme
 - `alacritty` - terminal
-- `bibata-cursor-theme` - cursor theme
 - `aylurs-gtk-shell` - widgets + bar
 - `thunar` - file explorer
 - `ufw` - firewall
