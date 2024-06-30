@@ -22,116 +22,114 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 ```
 
 <details>
-  <summary><h3>Dependency Description</h3></summary>
+  <summary><h3>Description</h3></summary>
 
-  These apps are required by the config
+  This software required by the config
   
-#### Window Management
-- `hyprland` - window manager
-  - `hyprcursor` - cursor for Hyprland
-  - `hyprlock` - lock screen for Hyprland
-  - `hypridle` - idle state manager for Hyprland
-  - `hyprpicker` - color picker for Hyprland
-
-#### Terminal & Shell
-- `alacritty` - terminal
-  - `alacritty-themes` - terminal theme
-- `zsh` - shell
-  - `oh-my-zsh` - zsh tool
-  - `powerlevel10k` - zsh theme
-
-#### Text Editors & IDEs
-- `gnome-text-editor` - simple text editor
-- `neovim` - in-terminal text editor
-- `visual-studio-code-bin` - main code editor
-
-#### File Management
-- `thunar` - file explorer
-  - `thunar-archive-plugin` - archive plugin for Thunar
-  - `thunar-volman` - removable devices control plugin for Thunar
-  - `thunar-vcs-plugin` - GIT actions plugin for Thunar
-  - `thunar-media-tags-plugin` - detailed information about media files for Thunar
-  - `gvfs` - sidebar addon for Thunar
-  - `tumbler` - thumbnail generator for Thunar
-    - `ffmpegthumbnailer` - video addon for Tumbler
-    - `libgsf` - open document extension addon for Tumbler
-    - `raw-thumbnailer` - raw file addon for Tumbler
-- `ranger` - backup file manager
-  - `dragon-drop` - addon for ranger
-- `file-roller` - archive tool
-
-#### System Tools & Utilities
-- `ufw` - firewall
-- `timeshift` - system backup manager
-- `lxsession-gtk3` - authentication agent for polkit
-- `xorg-xhost` - server access control (needed for gparted)
-- `baobab` - disk visualization
-- `gparted` - disk management
-
-#### Networking & Bluetooth
-- `bluez` - bluetooth
-- `bluez-utils` - bluetooth
-- `blueman` - bluetooth GUI
-
-#### Audio Management
-- `pipewire-pulse` - for pavucontrol
-- `pavucontrol` - sound control
-- `pamixer` - terminal sound control
-
-#### Printing
-- `cups` - printing system
-- `gutenprint` - printing tool
-- `ghostscript` - printing dep
-- `hplip` - HP printer drivers (optional)
-- `foomatic-db-gutenprint-ppds` - drivers for printing
-
-#### GUI Customization & Themes
-- `gnome-bluetooth-3.0` - AGS dependency
-- `aylurs-gtk-shell` - widgets + bar / status bar and widgets (WIP)
-- `nwg-look` - gtk theme editor
-- `dconf-editor` - theme editor
-- `gruvbox-plus-icon-theme-git` - main icons
-- `papirus-icon-theme` - backup icons
-- `qt5-graphicaleffects` - sddm theme dep
-- `qt5-quickcontrols2` - sddm theme dep
-- `qt5-svg` - sddm theme dep
-
-#### Media & Graphics
-- `vlc` - media player
-- `inkscape` - SVG editor
-- `gthumb` - image viewer/editor
-- `swappy` - draw on screenshots
-- `pinta` - paint-like image editor
-
-#### System Enhancements
-- `btop` - task manager
-- `piper` - mouse control / mouse config tool
-- `wtype` - keyboard simulator
-- `brightnessctl` - brightness control
-
-#### Screenshotting & Clipboarding
-- `grimblast-git` - screenshotting
-
-#### Launcher
-- `rofi-wayland` - launcher
-  - `rofi-calc-git` - calc plugin for rofi
-  - `rofi-emoji-git` - emoji plugin for rofi
-  - `cliphist` - clipboard plugin for rofi
-
-#### Web
-- `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
-
-#### Miscellaneous
-- `jq` - jquery
-- `socat` - reading sockets
+  #### Window Management
+  - `hyprland` - window manager
+    - `hyprcursor` - cursor for Hyprland
+    - `hyprlock` - lock screen for Hyprland
+    - `hypridle` - idle state manager for Hyprland
+    - `hyprpicker` - color picker for Hyprland
+  
+  #### Terminal & Shell
+  - `alacritty` - terminal
+    - `alacritty-themes` - terminal theme
+  - `zsh` - shell
+    - `oh-my-zsh` - zsh tool
+    - `powerlevel10k` - zsh theme
+  
+  #### File Management
+  - `thunar` - file explorer
+    - `thunar-archive-plugin` - archive plugin for Thunar
+    - `thunar-volman` - removable devices control plugin for Thunar
+    - `thunar-vcs-plugin` - GIT actions plugin for Thunar
+    - `thunar-media-tags-plugin` - detailed information about media files for Thunar
+    - `gvfs` - sidebar addon for Thunar
+    - `tumbler` - thumbnail generator for Thunar
+      - `ffmpegthumbnailer` - video addon for Tumbler
+      - `libgsf` - open document extension addon for Tumbler
+      - `raw-thumbnailer` - raw file addon for Tumbler
+  - `ranger` - backup file manager
+    - `dragon-drop` - addon for ranger
+  - `file-roller` - archive tool
+  
+  #### System Tools & Utilities
+  - `ufw` - firewall
+  - `timeshift` - system backup manager
+  - `lxsession-gtk3` - authentication agent for polkit
+  
+  #### Networking & Bluetooth
+  - `bluez` - bluetooth
+  - `bluez-utils` - bluetooth
+  - `blueman` - bluetooth GUI
+  
+  #### Audio Management
+  - `pipewire-pulse` - for pavucontrol
+  - `pavucontrol` - sound control
+  - `pamixer` - terminal sound control
+  
+  #### Printing
+  - `cups` - printing system
+  - `gutenprint` - printing tool
+  - `ghostscript` - printing dep
+  - `hplip` - HP printer drivers (optional)
+  - `foomatic-db-gutenprint-ppds` - drivers for printing
+  
+  #### GUI Customization & Themes
+  - `gnome-bluetooth-3.0` - AGS dependency
+  - `aylurs-gtk-shell` - widgets + bar / status bar and widgets (WIP)
+  - `nwg-look` - gtk theme editor
+  - `dconf-editor` - theme editor
+  - `gruvbox-plus-icon-theme-git` - main icons
+  - `papirus-icon-theme` - backup icons
+  - `qt5-graphicaleffects` - sddm theme dep
+  - `qt5-quickcontrols2` - sddm theme dep
+  - `qt5-svg` - sddm theme dep
+  
+  #### Media & Graphics
+  - `vlc` - media player
+  - `gthumb` - image viewer/editor
+  - `swappy` - draw on screenshots
+  - `pinta` - paint-like image editor
+  
+  #### System Enhancements
+  - `btop` - task manager
+  - `piper` - mouse control / mouse config tool
+  - `wtype` - keyboard simulator
+  - `brightnessctl` - brightness control
+  
+  #### Screenshotting & Clipboarding
+  - `grimblast-git` - screenshotting
+  
+  #### Launcher
+  - `rofi-wayland` - launcher
+    - `rofi-calc-git` - calc plugin for rofi
+    - `rofi-emoji-git` - emoji plugin for rofi
+    - `cliphist` - clipboard plugin for rofi
+  
+  #### Web
+  - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
+  
+  #### Miscellaneous
+  - `jq` - jquery
+  - `socat` - reading sockets
 </details>
 
 <details>
-  <summary><h3>Optional</h3></summary>
+  <summary><h3>Decription</h3></summary>
   
-  These apps are not required anywhere in the config.
+  This software is not required anywhere in the config.
 
-  - WIP
+  - `gnome-text-editor` - simple text editor
+  - `neovim` - in-terminal text editor
+  - `visual-studio-code-bin` - main code editor
+  - `baobab` - disk visualization
+  - `xorg-xhost` - server access control (needed for gparted)
+  - `gparted` - disk management
+  - `inkscape` - SVG editor
+  - `gimp` - raster graphics editor
 </details>
 
 ## Fonts I use
