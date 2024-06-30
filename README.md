@@ -2,7 +2,7 @@
 A repository containing my linux dotfiles (WIP)
 
 
-## Config:
+## Config
 - 🖥️ **OS**: Arch Linux
 - 🐚 **Shell**: zsh
 - 🎨 **DE**: Hyprland
@@ -14,11 +14,11 @@ A repository containing my linux dotfiles (WIP)
 - 🗃️ **File Manager**: Thunar
 
 
-## Dependencies:
+## Install
 
 You can manually install all deps with this command:
 ```
-yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k gnome-text-editor neovim visual-studio-code-bin thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer ranger dragon-drop file-roller ufw timeshift lxsession-gtk3 xorg-xhost baobab gparted bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc inkscape gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-calc-git rofi-emoji-git firefox-pwa jq socat
+yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k gnome-text-editor neovim visual-studio-code-bin thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer ranger dragon-drop file-roller ufw timeshift lxsession-gtk3 xorg-xhost baobab gparted bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc inkscape gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat
 ```
 
 <details>
@@ -81,19 +81,20 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 #### Printing
 - `cups` - printing system
 - `gutenprint` - printing tool
-- `ghostscript` - printing requirement
+- `ghostscript` - printing dep
 - `hplip` - HP printer drivers (optional)
 - `foomatic-db-gutenprint-ppds` - drivers for printing
 
 #### GUI Customization & Themes
+- `gnome-bluetooth-3.0` - AGS dependency
 - `aylurs-gtk-shell` - widgets + bar / status bar and widgets (WIP)
 - `nwg-look` - gtk theme editor
 - `dconf-editor` - theme editor
 - `gruvbox-plus-icon-theme-git` - main icons
 - `papirus-icon-theme` - backup icons
-- `qt5-graphicaleffects` - sddm theme
-- `qt5-quickcontrols2` - sddm theme
-- `qt5-svg` - sddm theme
+- `qt5-graphicaleffects` - sddm theme dep
+- `qt5-quickcontrols2` - sddm theme dep
+- `qt5-svg` - sddm theme dep
 
 #### Media & Graphics
 - `vlc` - media player
@@ -101,9 +102,6 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 - `gthumb` - image viewer/editor
 - `swappy` - draw on screenshots
 - `pinta` - paint-like image editor
-
-#### Bluetooth
-- `gnome-bluetooth-3.0` - AGS dependency
 
 #### System Enhancements
 - `btop` - task manager
@@ -113,12 +111,12 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 
 #### Screenshotting & Clipboarding
 - `grimblast-git` - screenshotting
-- `cliphist` - clipboard plugin for rofi
-- `dragon-drop` - addon for ranger
 
-#### Rofi Plugins
-- `rofi-calc-git` - calc plugin for rofi
-- `rofi-emoji-git` - emoji plugin for rofi
+#### Launcher
+- `rofi-wayland` - launcher
+  - `rofi-calc-git` - calc plugin for rofi
+  - `rofi-emoji-git` - emoji plugin for rofi
+  - `cliphist` - clipboard plugin for rofi
 
 #### Web
 - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
