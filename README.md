@@ -17,7 +17,9 @@ A repository containing my linux dotfiles (WIP)
 ## Dependencies:
 
 <details>
-  <summary><h3>Description of each dependency</h3></summary>
+  <summary><h3>Dependency Description</h3></summary>
+
+  These apps are required by the config
   
   - `hyprland` - window manager
   - `zsh` - shell
