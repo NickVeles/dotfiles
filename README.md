@@ -171,7 +171,7 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
-- Add my [Firefox theme]() WIP!.
+- Add my [Firefox theme](https://addons.mozilla.org/en-US/firefox/addon/gruvbox-dark-theme-shapes/).
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
   - Create Firefox PWAs for Google Gmail, Keep, and Calendar.
   - Create Discord PWA:
