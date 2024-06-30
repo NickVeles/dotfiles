@@ -1,7 +1,8 @@
 configuration {
   modes: [ combi, emoji, calc ];
   combi-modes: [ drun ];
-  icon-theme: "Papirus-Dark"; // Tela circle
+  icon-theme: "Papirus-Dark";
+  // There is no way I'm using 'Gruvbox Plus Dark' icons.
 }
 
 @theme "theme"
