@@ -16,6 +16,13 @@ A repository containing my linux dotfiles (WIP)
 
 ## Install
 
+⚠ This is very WIP. Do at your own risk.
+
+1. Install all the dependencies.
+2. Run `git clone https://github.com/NickVeles/dotfiles/`.
+3. Extract the cloned folder to your home directory.
+4. Do all things in **Things To Do** section.
+
 ### You can manually install all deps with this command:
 ```
 yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer ranger dragon-drop file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat
