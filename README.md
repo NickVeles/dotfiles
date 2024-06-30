@@ -116,7 +116,7 @@ A repository containing my linux dotfiles (WIP)
     - enable Discord > User Settings > Notifications > Enable Desktop Notifications.
 - Install the [Gruvbox-GTK-Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme).
 
-Some day I'll surely create an install script that does all these things. For now, it's all manual.
+Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
 
 ## FAQ
