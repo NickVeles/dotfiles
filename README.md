@@ -7,7 +7,7 @@ A repository containing my linux dotfiles (WIP)
 - 🐚 Zsh with PowerLevel10K - shell + theme
 - 💻 Alacritty - termianl
 - 🔍 Rofi - dmenu
-- 🖱️ Bibata Modern Ice - cursor-theme + hyprcursor
+- 🖱️ Bibata Gruvbox - cursor-theme + hyprcursor
 - 📂 Gruvbox - gtk-theme
 - 🙂 Gruvbox Plus Dark - icon-theme
 - 🕥 AGS - status Bar + widgets
