@@ -15,6 +15,9 @@ A repository containing my linux dotfiles (WIP)
 
 
 ## Dependencies:
+
+<details>
+  <summary>List of Dependencies</summary>
 - `hyprland` - window manager
 - `zsh` - shell
 - `powerlevel10k` - zsh theme
@@ -85,7 +88,7 @@ A repository containing my linux dotfiles (WIP)
 - `neovim` - in-terminal text editor
 - `visual-studio-code-bin` - main code editor
 - `piper` - mouse config tool
-
+</details>
 
 ## Fonts I use
 - `ttf-jetbrains-mono`
