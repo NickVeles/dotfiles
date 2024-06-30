@@ -3,15 +3,15 @@ A repository containing my linux dotfiles (WIP)
 
 
 ## Config:
-- 🖥️ OS: Arch Linux
-- 🐚 Shell: zsh
-- 🎨 DE: Hyprland
-- 🖱️ Cursor: Bibata-Modern-Gruvbox-Light
-- 🖼️ Theme: Gruvbox-Dark
-- 📁 Icons: Gruvbox-Plus-Dark
-- ⬛ Terminal: alacritty
-- 🕥 Widgets: AGS
-- 🗃️ File Manager: Thunar
+- 🖥️ **OS**: Arch Linux
+- 🐚 **Shell**: zsh
+- 🎨 **DE**: Hyprland
+- 🖱️ **Cursor**: Bibata-Modern-Gruvbox-Light
+- 🖼️ **Theme**: Gruvbox-Dark
+- 📁 **Icons**: Gruvbox-Plus-Dark
+- ⬛ **Terminal**: alacritty
+- 🕥 **Widgets**: AGS
+- 🗃️ **File Manager**: Thunar
 
 
 ## Dependencies:
