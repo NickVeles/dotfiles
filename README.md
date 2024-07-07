@@ -122,6 +122,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
   #### Miscellaneous
   - `jq` - jquery
   - `socat` - reading sockets
+  - `python-scipy` - gruvboxize requirement
 </details>
 
 ### You can install all optional deps with:
