@@ -393,25 +393,25 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Convert image to Gruvbox palette')
 
-    message = 'Input image file path'
+    message = 'input image file path (required)'
     parser.add_argument('-f', '--file-path', type=str, required=True, help=message)
 
-    message = 'Output image file path'
+    message = 'output image file path'
     parser.add_argument('-o', '--out-path', type=str, help=message)
     
-    message = 'Use brightest colors while extending colors'
+    message = 'use brightest colors while extending colors'
     parser.add_argument('-l', '--light', action='store_true', help=message)
     
-    message = 'Create .gpl file'
+    message = 'create .gpl file'
     parser.add_argument('--gpl', action='store_true', help=message)
     
-    message = 'Use Floyd-Steinberg dithering'
+    message = 'use Floyd-Steinberg dithering'
     parser.add_argument('-d', '--dither', action='store_true', help=message)
     
-    message = 'Interpolate between palette colors'
+    message = 'interpolate between palette colors'
     parser.add_argument('-i', '--interpolate', action='store_true', help=message)
     
-    message = 'A .gpl file path used as a base palette'
+    message = 'a .gpl file path used as a base palette'
     parser.add_argument('-p', '--palette-path', type=str, help=message)
 
     args = parser.parse_args()
