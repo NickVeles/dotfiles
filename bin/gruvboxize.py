@@ -2,6 +2,7 @@ from pathlib import PosixPath
 from PIL import Image
 from scipy.spatial import KDTree
 import numpy as np
+from itertools import combinations
 
 # Gruvbox Dark color palette
 PALETTE = [
@@ -70,13 +71,33 @@ def luminance(color: tuple):
     return 0.2126 * r + 0.7152 * g + 0.0722 * b
 
 
-def extend_palette(palette: list, darkest_color: str = None, brightest_color: str = None, use_brightest: bool = False):
+def interpoalte_palette(color1: tuple, color2: tuple, num_colors: int = 20):
+
+    # Change to Numpy RGB format (0 to 1 range)
+    color1 = np.array(color1) / 255.0
+    color2 = np.array(color2) / 255.0
+
+    # Create a palette with interpolated colors
+    palette = np.linspace(color1, color2, num_colors)
+
+    # Convert back to 0-255 range and tuple of tuples
+    palette = tuple(tuple(int(c * 255) for c in color) for color in palette)
+
+    return palette
+
+
+def extend_palette(palette: list, darkest_color: str = None, brightest_color: str = None, use_brightest: bool = False, interpolate: bool = False):
 
     print("Extending colors...")
 
     palette = map(color_hex2dec, palette)
     palette = list(palette)
     new_palette = set(palette)
+
+    if interpolate:
+        for color1, color2 in combinations(palette, 2):
+            interpolated_palette = interpoalte_palette(color1, color2)
+            new_palette.update(interpolated_palette)
 
     if brightest_color is None:
         brightest_color = max(palette, key=luminance)
@@ -149,7 +170,7 @@ def save_as_gpl(palette: list, out_path: str):
 
 def save_as_image(palette: list, in_path: str, out_path: str = None, use_floyd: bool = False):
 
-    palette = extend_palette(palette, use_brightest=True)
+    palette = extend_palette(palette, use_brightest=True, interpolate=True)
     palette = list(palette)
 
     in_path = PosixPath(in_path)
@@ -239,14 +260,16 @@ def save_as_image(palette: list, in_path: str, out_path: str = None, use_floyd: 
 if __name__ == "__main__":
     
     # TODO: Make this an executable with flags:
-    # -f --file   - in_path
-    # -o --out    - out_path
-    # -l --light  - use brightness
-    #    --gpl    - create .gpl file
-    # -d --dither - use floyd-steinberg dither
+    # -f --file        - in_path
+    # -o --out         - out_path
+    # -l --light       - use brightness
+    #    --gpl         - create .gpl file
+    # -d --dither      - use floyd-steinberg dither
+    # -i --interpolate - interpolate between palette colors
+    # -p --palette     - choose a new palette from a gpl file
 
     # TODO: Add docstrings
 
-    in_path = "~/Pictures/Wallpapers/earth_4k.png"
-    out_path = "~/Pictures/Wallpapers/earth_4k_gruvbox.png"
+    in_path = "~/Pictures/Wallpapers/mars_8k.png"
+    out_path = "~/Pictures/Wallpapers/mars_8k_gruvbox.png"
     save_as_image(PALETTE, in_path, out_path)
