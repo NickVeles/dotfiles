@@ -376,14 +376,14 @@ def save_as_image(palette: list, in_path: str, out_path: str = None, use_floyd: 
         
         if not out_path.exists():
             out_path.touch()
-            print(f"File {out_path} created")
+            print(f"File '{out_path}' created")
 
         print("Saving image...")
         new_image.save(out_path)
         print(f"Image saved to {out_path}")
 
     except FileNotFoundError:
-        print(f"Input file {in_path} not found")
+        print(f"Input file '{in_path}' not found")
 
     except Exception as e:
         print(f"An unknown error happened while saving the image: {e}")
