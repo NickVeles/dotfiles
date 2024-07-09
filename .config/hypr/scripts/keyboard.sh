@@ -10,8 +10,8 @@ layout=$(hyprctl devices -j |
 
 if [ "$layout" == "PO" ]; then
     hyprctl keyword input:kb_layout us
-    notify-send "<span color='#65D6C4'>English</span>" "Changed to US Keyboard Layout"
+    notify-send "<span color='#458588'>English</span>" "Changed to US Keyboard Layout"
 else
     hyprctl keyword input:kb_layout pl
-    notify-send "<span color='#FF6188'>Polish</span>" "Changed to Polish Keyboard Layout"
+    notify-send "<span color='#FB4934'>Polish</span>" "Changed to Polish Keyboard Layout"
 fi
