@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
+
 from pathlib import PosixPath
 from PIL import Image
 from scipy.spatial import KDTree
-import numpy as np
 from itertools import combinations
+import numpy as np
+import argparse
 
 # Gruvbox Dark color palette
 PALETTE = [
@@ -43,7 +46,16 @@ PALETTE = [
 ]
 
 
-def color_hex2dec(hexstr: str):
+def color_hex2dec(hexstr: str) -> tuple:
+    """
+    Convert a hexadecimal color string to a tuple of decimal RGB values.
+
+    Args:
+        hexstr (str): Hexadecimal color string (e.g., "#FF5733").
+
+    Returns:
+        tuple: Decimal RGB values as a tuple (r, g, b).
+    """
 
     r = int(hexstr[1:3], 16)
     g = int(hexstr[3:5], 16)
@@ -52,7 +64,17 @@ def color_hex2dec(hexstr: str):
     return (r, g, b)
 
 
-def color_dec2hex(hexval: tuple, prefix: bool = True):
+def color_dec2hex(hexval: tuple, prefix: bool = True) -> str:
+    """
+    Convert a tuple of decimal RGB values to a hexadecimal color string.
+
+    Args:
+        hexval (tuple): Decimal RGB values as a tuple (r, g, b).
+        prefix (bool, optional): Whether to include the "#" prefix. Defaults to True.
+
+    Returns:
+        str: Hexadecimal color string (e.g., "#FF5733").
+    """
     
     color = "#" if prefix else ""
     for value in hexval:
@@ -66,12 +88,33 @@ def color_dec2hex(hexval: tuple, prefix: bool = True):
     return color
 
 
-def luminance(color: tuple):
+def luminance(color: tuple) -> float:
+    """
+    Calculate the luminance of a color.
+
+    Args:
+        color (tuple): Decimal RGB values as a tuple (r, g, b).
+
+    Returns:
+        float: Luminance value.
+    """
+
     r, g, b = color
     return 0.2126 * r + 0.7152 * g + 0.0722 * b
 
 
-def interpoalte_palette(color1: tuple, color2: tuple, num_colors: int = 20):
+def interpolate_palette(color1: tuple, color2: tuple, num_colors: int = 20) -> tuple:
+    """
+    Interpolate between two colors to create a palette.
+
+    Args:
+        color1 (tuple): Decimal RGB values of the first color.
+        color2 (tuple): Decimal RGB values of the second color.
+        num_colors (int, optional): Number of colors to generate. Defaults to 20.
+
+    Returns:
+        tuple: Interpolated palette as a tuple of tuples.
+    """
 
     # Change to Numpy RGB format (0 to 1 range)
     color1 = np.array(color1) / 255.0
@@ -86,7 +129,20 @@ def interpoalte_palette(color1: tuple, color2: tuple, num_colors: int = 20):
     return palette
 
 
-def extend_palette(palette: list, darkest_color: str = None, brightest_color: str = None, use_brightest: bool = False, interpolate: bool = False):
+def extend_palette(palette: list, darkest_color: str = None, brightest_color: str = None, use_brightest: bool = False, interpolate: bool = False) -> set:
+    """
+    Extend a color palette by interpolating between colors and/or using the brightest colors.
+
+    Args:
+        palette (list): List of hexadecimal color strings.
+        darkest_color (str, optional): Hexadecimal color string of the darkest color. Defaults to None.
+        brightest_color (str, optional): Hexadecimal color string of the brightest color. Defaults to None.
+        use_brightest (bool, optional): Whether to use the brightest colors while extending. Defaults to False.
+        interpolate (bool, optional): Whether to interpolate between colors. Defaults to False.
+
+    Returns:
+        set: Extended palette as a set of tuples of decimal RGB values.
+    """
 
     print("Extending colors...")
 
@@ -96,7 +152,7 @@ def extend_palette(palette: list, darkest_color: str = None, brightest_color: st
 
     if interpolate:
         for color1, color2 in combinations(palette, 2):
-            interpolated_palette = interpoalte_palette(color1, color2)
+            interpolated_palette = interpolate_palette(color1, color2)
             new_palette.update(interpolated_palette)
 
     if brightest_color is None:
@@ -146,10 +202,67 @@ def extend_palette(palette: list, darkest_color: str = None, brightest_color: st
     return new_palette
 
 
-def save_as_gpl(palette: list, out_path: str):
-    gpl = "GIMP Palette\nName: Gruvbox Extended\nColumns: 1\n#"
+def read_gpl(file_path: PosixPath) -> list:
+    """
+    Read a GIMP Palette (.gpl) file and extract the colors.
 
-    palette = extend_palette(PALETTE)
+    Args:
+        file_path (PosixPath): Path to the .gpl file.
+
+    Returns:
+        list: List of tuples containing decimal RGB values.
+    """
+
+    colors = []
+
+    try:
+        with open(file_path, 'r') as f:
+            lines = f.readlines()
+
+            for line in lines:
+                line = line.strip()
+
+                if not line or line.startswith('GIMP Palette'):
+                    continue
+                # Split the line into components: R G B Name
+                components = line.split()
+
+                if len(components) < 3:
+                    continue
+
+                try:
+                    # Extract RGB values
+                    r = int(components[0])
+                    g = int(components[1])
+                    b = int(components[2])
+                    # Validate RGB values
+                    if 0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255:
+                        colors.append((r, g, b))
+
+                except ValueError:
+                    continue
+
+    except FileNotFoundError:
+        print(f"Could not read the GIMP Palette file: '{file_path}'")
+        return
+    
+    except Exception as e:
+        print(f"An unknown error happened while reading a .gpl file: {e}")
+        return
+
+    return colors
+
+
+def save_as_gpl(palette: list, out_path: str):
+    """
+    Save a color palette as a GIMP Palette (.gpl) file.
+
+    Args:
+        palette (list): List of tuples containing decimal RGB values.
+        out_path (str): Path to the output .gpl file.
+    """
+
+    gpl = "GIMP Palette\nName: Gruvbox Extended\nColumns: 1\n#"
 
     for color in palette:
         r, g, b = color
@@ -162,15 +275,31 @@ def save_as_gpl(palette: list, out_path: str):
     file_path = file_path.expanduser()
     file_path = file_path.resolve()
     
-    with open(file_path, 'w') as f:
-        f.write(gpl)
+    stem = file_path.stem
+    file_path = file_path.with_name(f"{stem}.gpl")
+    
+    try:            
+        with open(file_path, 'w') as f:
+            f.write(gpl)
+
+    except:
+        print(f"Failed to save to the file '{file_path}'")
+        return
     
     print(f"File saved to '{file_path}'")
 
 
 def save_as_image(palette: list, in_path: str, out_path: str = None, use_floyd: bool = False):
+    """
+    Convert an image to a specified color palette and save the result.
 
-    palette = extend_palette(palette, use_brightest=True, interpolate=True)
+    Args:
+        palette (list): List of tuples containing decimal RGB values.
+        in_path (str): Path to the input image file.
+        out_path (str, optional): Path to the output image file. Defaults to None.
+        use_floyd (bool, optional): Whether to use Floyd-Steinberg dithering. Defaults to False.
+    """
+
     palette = list(palette)
 
     in_path = PosixPath(in_path)
@@ -254,22 +383,61 @@ def save_as_image(palette: list, in_path: str, out_path: str = None, use_floyd: 
         print(f"Image saved to {out_path}")
 
     except FileNotFoundError:
-        print(f"Input file {in_path} not found.")
+        print(f"Input file {in_path} not found")
+
+    except Exception as e:
+        print(f"An unknown error happened while saving the image: {e}")
 
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Convert image to Gruvbox palette')
+
+    message = 'Input image file path'
+    parser.add_argument('-f', '--file-path', type=str, required=True, help=message)
+
+    message = 'Output image file path'
+    parser.add_argument('-o', '--out-path', type=str, help=message)
     
-    # TODO: Make this an executable with flags:
-    # -f --file        - in_path
-    # -o --out         - out_path
-    # -l --light       - use brightness
-    #    --gpl         - create .gpl file
-    # -d --dither      - use floyd-steinberg dither
-    # -i --interpolate - interpolate between palette colors
-    # -p --palette     - choose a new palette from a gpl file
+    message = 'Use brightest colors while extending colors'
+    parser.add_argument('-l', '--light', action='store_true', help=message)
+    
+    message = 'Create .gpl file'
+    parser.add_argument('--gpl', action='store_true', help=message)
+    
+    message = 'Use Floyd-Steinberg dithering'
+    parser.add_argument('-d', '--dither', action='store_true', help=message)
+    
+    message = 'Interpolate between palette colors'
+    parser.add_argument('-i', '--interpolate', action='store_true', help=message)
+    
+    message = 'A .gpl file path used as a base palette'
+    parser.add_argument('-p', '--palette-path', type=str, help=message)
 
-    # TODO: Add docstrings
+    args = parser.parse_args()
 
-    in_path = "~/Pictures/Wallpapers/mars_8k.png"
-    out_path = "~/Pictures/Wallpapers/mars_8k_gruvbox.png"
-    save_as_image(PALETTE, in_path, out_path)
+    # ---
+
+    if args.palette_path:
+        og_palette = PosixPath(args.palette_path)
+        og_palette = read_gpl(og_palette)
+    
+    else:
+        og_palette = PALETTE
+
+    file_path = PosixPath(args.file_path)
+
+    palette = extend_palette(og_palette, use_brightest=args.light, interpolate=args.interpolate)
+
+    if args.out_path:
+        out_path = PosixPath(args.out_path)
+    
+    else:
+        stem = file_path.stem
+        suffix = file_path.suffix
+        out_path = file_path.with_name(f"{stem}_gruvbox{suffix}")
+
+    if args.gpl:
+        save_as_gpl(palette, out_path)
+
+    save_as_image(palette, file_path, out_path, use_floyd=args.dither)
