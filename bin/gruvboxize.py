@@ -394,7 +394,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Convert image to Gruvbox palette')
 
     message = 'input image file path (required)'
-    parser.add_argument('-f', '--file-path', type=str, required=True, help=message)
+    parser.add_argument('file_path', type=str, help=message)
 
     message = 'output image file path'
     parser.add_argument('-o', '--out-path', type=str, help=message)
