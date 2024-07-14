@@ -183,6 +183,8 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
     - disable Firefox > Open links in tabs instead of new windows;
     - enable Discord > User Settings > Notifications > Enable Desktop Notifications.
 - Install the [Gruvbox-GTK-Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme).
+- Install [vim-plug](https://github.com/junegunn/vim-plug).
+  - Use `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
 Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
