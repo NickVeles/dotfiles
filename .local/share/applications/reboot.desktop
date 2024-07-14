@@ -4,6 +4,6 @@ Version=1.0
 Name=Reboot
 Comment=Reboots the computer
 Exec=reboot
-Icon=system-reboot
+Icon=~/.local/share/icons/custom/system-reboot.svg
 Terminal=false
 Categories=Menu

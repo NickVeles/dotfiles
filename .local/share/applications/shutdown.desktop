@@ -4,6 +4,6 @@ Version=1.0
 Name=Shutdown
 Comment=Shutdowns the computer
 Exec=shutdown 0
-Icon=system-shutdown
+Icon=~/.local/share/icons/custom/system-shutdown.svg
 Terminal=false
 Categories=Menu

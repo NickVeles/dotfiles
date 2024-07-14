@@ -4,6 +4,6 @@ Version=1.0
 Name=Logout
 Comment=Exits the system
 Exec=hyprctl dispatch exit
-Icon=system-log-out
+Icon=~/.local/share/icons/custom/system-log-out.svg
 Terminal=false
 Categories=Menu
