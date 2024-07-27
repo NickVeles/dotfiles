@@ -150,18 +150,20 @@ yay -S gnome-text-editor neovim visual-studio-code-bin baobab xorg-xhost gparted
 
 ### You can install the fonts with:
 ```
-yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font-awesome noto-fonts noto-fonts-emoji
+yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra noto-fonts-cjk
 ```
 
 <details>
   <summary><h3>Description</h3></summary>
   
-  - `ttf-jetbrains-mono`
-  - `ttf-jetbrains-mono-nerd`
+  - `ttf-jetbrains-mono` - UI font
+  - `ttf-jetbrains-mono-nerd` - UI font
   - `otf-opendyslexic-nerd` - [link](https://opendyslexic.org/)
   - `ttf-font-awesome`
-  - `noto-fonts`
-  - `noto-fonts-emoji`
+  - `noto-fonts` - Main font for everything
+  - `noto-fonts-emoji` - Emoji font
+  - `noto-fonts-extra` - Additional formatting options for main font
+  - `noto-fonts-cjk` - chinese/japanese/korean
 </details>
 
 
