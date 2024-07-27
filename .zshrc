@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 export PATH="$HOME/bin:$PATH"
-
+alias vim=nvim
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
