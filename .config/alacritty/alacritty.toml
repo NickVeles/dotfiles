@@ -29,8 +29,3 @@ size = 11
 chars = "\u0017"
 mods = "Control"
 key = "Backspace"
-
-[[keyboard.bindings]]
-action = "Paste"
-mods = "Control"
-key = "V"
