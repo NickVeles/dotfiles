@@ -203,7 +203,7 @@ First of all, it's not recommended, as I used the gruvbox theme everywhere, incl
 4. Save the file and either reboot your computer or exit to SDDM.
 
 ### 2. Where can I find your cursors?
-Here's the direct **download**: [Bibata-Gruvbox-Cursors.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz). I created them myself using *bibata.live*.
+Here's the direct **download**: [Bibata-Gruvbox-Cursors.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz). I used the *bibata.live* tool to create them.
 
 ### 3. Where can I find your wallpapers?
 Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz). Here are the links to the original images/wallpapers: [Mars Wallpaper](https://www.pixel4k.com/planet-mars-4k-8k-2212.html), [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png), [Abstract Shapes](https://www.reddit.com/r/wallpapers/comments/10d98fw/gruvbox_abstract_shapes_7680x4320/) by u/lqlarry.
