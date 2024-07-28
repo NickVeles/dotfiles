@@ -25,7 +25,7 @@ A repository containing my linux dotfiles (WIP)
 
 ### You can manually install all deps with this command:
 ```
-yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree
+yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree neovim ripgrep ranger dragon-drop
 ```
 
 <details>
@@ -60,7 +60,10 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
       - `libgsf` - open document extension addon for Tumbler
       - `raw-thumbnailer` - raw file addon for Tumbler
   - `file-roller` - archive tool
-  - 
+  - `neovim` - in-terminal text editor
+    - `ripgrep` - telescope plugin dependency
+  - `ranger` - backup file manager
+    - `dragon-drop` - addon for ranger
   
   #### System Tools & Utilities
   - `ufw` - firewall
@@ -127,7 +130,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
 
 ### You can install all optional deps with:
 ```
-yay -S gnome-text-editor neovim visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp ranger dragon-drop ripgrep
+yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp
 ```
 
 <details>
@@ -136,10 +139,6 @@ yay -S gnome-text-editor neovim visual-studio-code-bin baobab xorg-xhost gparted
   This software is not required anywhere in the config.
 
   - `gnome-text-editor` - simple text editor
-  - `neovim` - in-terminal text editor
-    - `ripgrep` - telescope plugin dependency
-  - `ranger` - backup file manager
-    - `dragon-drop` - addon for ranger
   - `visual-studio-code-bin` - main code editor
   - `baobab` - disk visualization
   - `xorg-xhost` - server access control (needed for gparted)
