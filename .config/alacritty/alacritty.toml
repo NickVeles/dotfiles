@@ -17,6 +17,20 @@ size = 11
   family = "JetBrains Mono NF"
   style = "Regular"
 
+  [font.italic]
+  family = "JetBrains Mono NF"
+  style = "Italic"
+
   [font.offset]
   x = 0
   y = 1
+
+[[keyboard.bindings]]
+chars = "\u0017"
+mods = "Control"
+key = "Backspace"
+
+[[keyboard.bindings]]
+action = "Paste"
+mods = "Control"
+key = "V"
