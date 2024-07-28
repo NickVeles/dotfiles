@@ -23,7 +23,7 @@ A repository containing my linux dotfiles (WIP)
 3. Extract the cloned folder to your home directory.
 4. Do all things in **Things To Do** section.
 
-### You can manually install all deps with this command:
+### Deps
 ```
 yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-themes zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree neovim ripgrep ranger dragon-drop
 ```
@@ -128,7 +128,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker alacritty alacritty-them
   - `python-scipy` - gruvboxize requirement
 </details>
 
-### You can install all optional deps with:
+### Optional Deps
 ```
 yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp
 ```
@@ -149,7 +149,6 @@ yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inksca
 
 ## Fonts
 
-### You can install the fonts with:
 ```
 yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-extra noto-fonts-cjk
 ```
