@@ -175,7 +175,6 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Use `btop` theme: `gruvbox_dark_v2` with background disabled.
 - Add my [Firefox theme](https://addons.mozilla.org/en-US/firefox/addon/gruvbox-dark-theme-shapes/).
 - Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
-  - Create Firefox PWAs for Google Gmail, Keep, and Calendar.
   - Create Discord PWA:
     - rename `discord.desktop.bak` to `discord.desktop` if you want to use the standard discord app;
     - enable Firefox > Settings > Force links into a new window;
