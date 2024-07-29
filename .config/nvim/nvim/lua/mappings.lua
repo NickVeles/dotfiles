@@ -23,9 +23,6 @@ map('v', '<A-j>', 'ddp')
 map('n', '<A-k>', 'ddkkp')
 map('v', '<A-k>', 'ddkkp')
 
--- Open Ranger
-map('n', '<leader>rr', ':Ranger<CR>')
-
 -- Built-in remaps
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
