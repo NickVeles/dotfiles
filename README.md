@@ -16,7 +16,7 @@ A repository containing my linux dotfiles (WIP)
 
 ## Install
 
-⚠ This is very WIP. Do at your own risk.
+⚠ This is very WIP. Run at your own risk.
 
 1. Install all the dependencies.
 2. Run `git clone https://github.com/NickVeles/dotfiles/` .
