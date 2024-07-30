@@ -142,6 +142,7 @@ yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inksca
   - `gparted` - disk management
   - `inkscape` - SVG editor
   - `gimp` - raster graphics editor
+  - `fastfetch` - system information tool
 </details>
 
 ## Fonts
