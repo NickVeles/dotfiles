@@ -127,7 +127,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker kitty zsh oh-my-zsh powe
 
 ### Optional Deps
 ```
-yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp
+yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp fastfetch
 ```
 
 <details>
