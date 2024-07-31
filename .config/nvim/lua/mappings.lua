@@ -2,29 +2,22 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- Override <C-p> with "+p
-map('n', '<C-p>', '"+p')
-map('v', '<C-p>', '"+p')
+-- Override p with "+p
+map({ 'n', 'v' }, 'p', '"+p')
 
--- Override <C-y> with "+y
-map('n', '<C-y>', '"+y')
-map('v', '<C-y>', '"+y')
+-- Override y with "+y
+map({ 'n', 'v' }, 'y', '"+y')
 
 -- Override d with "_d
-map('n', 'd', '"_d')
-map('v', 'd', '"_d')
+map({ 'n', 'v' }, 'd', '"_d')
 
--- Override <C-u> with <C-r>
-map('n', '<C-u>', '<C-r>')
+-- Scroll up
+map('n', '<C-u>', '<C-u>zz')
+map('n', '<C-d>', '<C-d>zz')
 
 -- Swap lines
-map('n', '<A-j>', 'ddp')
-map('v', '<A-j>', 'ddp')
-map('n', '<A-k>', 'ddkkp')
-map('v', '<A-k>', 'ddkkp')
+map({ 'n', 'v' }, '<A-j>', 'ddp')
+map({ 'n', 'v' }, '<A-k>', 'ddkkp')
 
--- Built-in remaps
-
+-- Bind ; to :
 map("n", ";", ":", { desc = "CMD enter command mode" })
-
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
