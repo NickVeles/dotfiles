@@ -77,10 +77,10 @@ element-icon {
 // WINDOW
 window {
     width:            20%;
-    // margin:           10 0 0 10;
+    margin:           6px 0 0 6px;
     background-color: var(bg-color);
     border:           2px;
-    border-radius:    0px 0px 12px 0px;
+    border-radius:    6px;
 }
 mainbox {
     padding: 0;

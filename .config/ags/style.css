@@ -114,12 +114,13 @@ calendar:indeterminate {
     background: #1D2021;
     color: #FBF1C7;
     border: alpha(#FBF1C7, 0.93) 2px solid;
-    border-radius: 0 0 0 12px;
+    border-radius: 8px;
 
     font-family: 'JetBrains Mono NF', monospace;
     font-size: 1.1rem;
 
     padding: 24px 8px 8px 8px;
+    margin: 6px 6px 0 0;
 }
 
 /* STATUS */
