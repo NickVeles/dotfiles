@@ -25,7 +25,7 @@ A repository containing my linux dotfiles (WIP)
 
 ### Deps
 ```
-yay -S hyprland hyprcursor hyprlock hypridle hyprpicker kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree neovim ripgrep yazi
+yay -S hyprland hyprcursor hyprlock hypridle hyprpicker kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git cliphist rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree neovim ripgrep yazi zen-browser-avx2-bin
 ```
 
 <details>
@@ -118,6 +118,7 @@ yay -S hyprland hyprcursor hyprlock hypridle hyprpicker kitty zsh oh-my-zsh powe
     - `cliphist` - clipboard plugin for rofi
   
   #### Web
+  - `zen-browser-avx2-bin` - optimized firefox-based browser
   - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
   
   #### Miscellaneous
