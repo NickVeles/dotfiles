@@ -152,14 +152,14 @@ inputbar {
     padding:    15px 20px 5px 20px ;
     spacing:    0px ;
     text-color: var(tx-color);
-    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+    children:   [ /* "prompt","textbox-prompt-colon", */ "entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 entry {
     text-color:        var(tx-color);
     cursor:            text;
     spacing:           0;
     placeholder-color: var(ib-color);
-    placeholder:       "input...";
+    placeholder:       "search...";
 }
 prompt {
     spacing:    0;

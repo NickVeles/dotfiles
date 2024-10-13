@@ -158,7 +158,7 @@ entry {
     cursor:            text;
     spacing:           0;
     placeholder-color: var(ib-color);
-    placeholder:       "search...";
+    placeholder:       "calculate...";
 }
 prompt {
     spacing:    0;

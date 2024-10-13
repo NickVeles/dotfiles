@@ -2,6 +2,7 @@ configuration {
   modes: [ combi, emoji, calc ];
   combi-modes: [ drun ];
   icon-theme: "Papirus-Dark";
+  display-drun: "";
   // There is no way I'm using 'Gruvbox Plus Dark' icons.
 }
 
