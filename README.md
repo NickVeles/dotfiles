@@ -133,7 +133,7 @@ yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inksca
 ```
 
 <details>
-  <summary><h3>Decription</h3></summary>
+  <summary><h3>Description</h3></summary>
   
   This software is not required anywhere in the config.
 
