@@ -167,7 +167,7 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 </details>
 
 
-## Things To Do
+## Things you have to do manually
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
 - Enable services: `ufw`, `cups.service`.
 - Enable `Experimental = true` in `/etc/bluetooth/main.conf`.
