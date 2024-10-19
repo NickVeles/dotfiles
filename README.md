@@ -182,7 +182,7 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
     - in the PWA, enable Firefox > Settings > Force links into a new window;
     - in the PWA, enable Firefox > Settings > Focus the existing window;
     - in the PWA, disable Firefox > Open links in tabs instead of new windows;
-    - in Discord PWA,enable Discord > User Settings > Notifications > Enable Desktop Notifications.
+    - in Discord, enable Discord > User Settings > Notifications > Enable Desktop Notifications.
 - Install the [Gruvbox-GTK-Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme).
 - Install [vim-plug](https://github.com/junegunn/vim-plug).
   - Use `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
