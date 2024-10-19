@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 export PATH="$HOME/bin:$PATH"
 alias vim=nvim
+alias neofetch=fastfetch
 bindkey '^?' backward-delete-char
 
 # export MANPATH="/usr/local/man:$MANPATH"
