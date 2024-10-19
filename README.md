@@ -193,7 +193,7 @@ Some day I'll (surely) create an install script that does all these things. For 
 ## FAQ
 
 ### 1. How to change the GTK theme?
-First of all, it's not recommended, as I used the gruvbox theme everywhere, including widgets and other stuff not affected by the GTK theme. But if you insist:
+First of all, it's **not recommended**, as I used the gruvbox theme everywhere, including widgets and other stuff not affected by the GTK theme. But if you insist:
 
 1. Open the `.config/hypr/hyprland.conf` file.
 2. Find the line with `env = GTK_THEME,Current-Theme`, where `Current-Theme` is the placeholder for your current theme.
