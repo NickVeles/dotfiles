@@ -170,45 +170,29 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Check `.config/hypr/nvidia.conf` for important information (if using nvidia gpu)
 - Enable services: `ufw`, `cups.service`.
 - Enable `Experimental = true` in `/etc/bluetooth/main.conf`.
-- Unpack the `.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz` file.
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
-- Use `btop` theme: `gruvbox_dark_v2` with background disabled.
-- Add my [Firefox theme](https://addons.mozilla.org/en-US/firefox/addon/gruvbox-dark-theme-shapes/).
-- Add the [PWA Extension](https://unhook.app/) to Firefox in order to use PWAs:
-  - Create Discord PWA:
-    - \*if you want to use standard Discord (not a PWA), then rename `discord.desktop.bak` to `discord.desktop`;
-    - in the PWA, enable Firefox > Settings > Force links into a new window;
-    - in the PWA, enable Firefox > Settings > Focus the existing window;
-    - in the PWA, disable Firefox > Open links in tabs instead of new windows;
-    - in Discord, enable Discord > User Settings > Notifications > Enable Desktop Notifications.
-- Install the [Gruvbox-GTK-Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme).
-- Install [vim-plug](https://github.com/junegunn/vim-plug).
-  - Use `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
 Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
 
 ## FAQ
 
-### 1. How to change the GTK theme?
-First of all, it's **not recommended**, as I use the gruvbox theme everywhere, including widgets and other stuff not affected by the GTK theme. But if you insist:
-
+### How to change the GTK theme?
 1. Open the `.config/hypr/hyprland.conf` file.
 2. Find the line with `env = GTK_THEME,Current-Theme`, where `Current-Theme` is the placeholder for your current theme.
 3. Change `Current-Theme` to the name of your desired theme.
     - e.g. `env = GTK_THEME,Arc-Dark`
 4. Save the file and either reboot your computer or exit to SDDM.
 
-### 2. Where can I find your cursors?
+### Where can I find your cursors?
 Here's the direct **download**: [Bibata-Gruvbox-Cursors.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz). I used the *bibata.live* tool to create them.
 
-### 3. Where can I find your wallpapers?
-Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz). Here are the links to the original images/wallpapers: [Mars Wallpaper](https://www.pixel4k.com/planet-mars-4k-8k-2212.html), [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png), [Abstract Shapes](https://www.reddit.com/r/wallpapers/comments/10d98fw/gruvbox_abstract_shapes_7680x4320/) by u/lqlarry.
+### Where can I find your wallpapers?
+Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz). Here are the links to the original images/wallpapers: [Mars Wallpaper](https://www.pixel4k.com/planet-mars-4k-8k-2212.html), [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png).
 
 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
-- Custom gruvbox cursors were created with [bibata.live](https://www.bibata.live/studio) by [Abdulkaiz Khatri](https://github.com/ful1e5).
 
