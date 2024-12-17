@@ -6,7 +6,7 @@ A repository containing my linux dotfiles (WIP)
 - 🖥️ **OS**: Arch Linux
 - 🐚 **Shell**: zsh
 - 🎨 **DE**: Hyprland
-- 🖱️ **Cursor**: Bibata-Modern-Light
+- 🖱️ **Cursor**: Bibata-Modern-Ice
 - 🖼️ **Theme**: Gruvbox-Dark
 - 📁 **Icons**: Gruvbox-Plus-Dark
 - ⬛ **Terminal**: kitty
@@ -25,7 +25,7 @@ A repository containing my linux dotfiles (WIP)
 
 ### Deps
 ```
-yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git rofi-wayland rofi-calc-git rofi-emoji-git firefox-pwa jq socat python-scipy tree neovim ripgrep yazi zen-browser-avx2-bin
+yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git rofi-wayland rofi-calc-git rofi-emoji-git jq socat python-scipy tree neovim ripgrep yazi zen-browser-avx2-bin bibata-cursor-theme
 ```
 
 <details>
@@ -90,8 +90,8 @@ yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitt
   - `aylurs-gtk-shell` - widgets + bar / status bar and widgets (WIP)
   - `nwg-look` - gtk theme editor
   - `dconf-editor` - theme editor
-  - `gruvbox-plus-icon-theme-git` - main icons
-  - `papirus-icon-theme` - backup icons
+  - `papirus-icon-theme` - icon theme
+  - `bibata-cursor-theme` - cursor themes
   - `qt5-graphicaleffects` - sddm theme dep
   - `qt5-quickcontrols2` - sddm theme dep
   - `qt5-svg` - sddm theme dep
@@ -118,7 +118,6 @@ yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitt
   
   #### Web
   - `zen-browser-avx2-bin` - optimized firefox-based browser
-  - `firefox-pwa` - progressive web apps (used with the [PWA Addon](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/))
   
   #### Miscellaneous
   - `jq` - jquery
@@ -179,21 +178,21 @@ Some day I'll (surely) create an install script that does all these things. For 
 ## FAQ
 
 ### - How can I change the system theme?
-1. Changing the GTK theme:
+1. Changing Hyprland config:
     - Open the `.config/hypr/hyprland.conf` file
-    - Find the line `env = GTK_THEME,placeholder`, where `placeholder` is the currently set theme
-    - Replace `placeholder` with your desired theme
+    - Find the line `env = GTK_THEME,theme`, where `theme` is the currently set theme
+    - Replace `theme` with your desired theme
+    - Find the line `env = HYPRCURSOR_THEME,cursor`, where `cursor` is the currently set theme
+    - Replace `cursor` with your desired cursor
     - Reboot or exit to SDDM
 2. Changing the terminal theme:
     - Run `kitty +kitten themes`
     - Select the theme you want
     - Select to **Modify** the current kitty config
-  
-### - How can I change the cursor?
-- Open the `.config/hypr/hyprland.conf` file.
-- Find the line `env = HYPRCURSOR_THEME,placeholder`, where `placeholder` is the currently set theme
-- Replace `placeholder` with your desired cursor
-- Reboot or exit to SDDM
+3. Changes in Gnome Tweaks:
+    - Run `gnome-tweaks`
+    - Go to **Appearance**
+    - Adjust theme and cursor however you want
 
 ### - How can I change the wallpaper?
 - Open the `.config/hypr/hyprpaper.conf` file.
