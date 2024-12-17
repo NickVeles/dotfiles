@@ -91,6 +91,7 @@ yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitt
   - `nwg-look` - gtk theme editor
   - `dconf-editor` - theme editor
   - `papirus-icon-theme` - icon theme
+  - `papirus-folders` - orange folders for papirus icon theme
   - `bibata-cursor-theme` - cursor themes
   - `qt5-graphicaleffects` - sddm theme dep
   - `qt5-quickcontrols2` - sddm theme dep
