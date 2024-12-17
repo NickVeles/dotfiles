@@ -7,8 +7,8 @@ A repository containing my linux dotfiles (WIP)
 - 🐚 **Shell**: zsh
 - 🎨 **DE**: Hyprland
 - 🖱️ **Cursor**: Bibata-Modern-Ice
-- 🖼️ **Theme**: Gruvbox-Dark
-- 📁 **Icons**: Gruvbox-Plus-Dark
+- 🖼️ **Theme**: Colloid-Dark
+- 📁 **Icons**: Papirus-Dark
 - ⬛ **Terminal**: kitty
 - 🕥 **Widgets**: AGS
 - 🗃️ **File Manager**: Thunar
@@ -171,6 +171,9 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Enable `Experimental = true` in `/etc/bluetooth/main.conf`.
 - Place `sugar-candy` folder in `/usr/share/sddm/themes/`.
 - Place `sddm.conf` file in `/etc/`.
+- Install the Colloid GTK theme:
+  - Run `git clone https://github.com/vinceliuice/Colloid-gtk-theme`
+  - Run `./Colloid-gtk-theme/install.sh --theme orange --tweaks rimless`
 
 Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
