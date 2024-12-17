@@ -212,7 +212,7 @@ Some day I'll (surely) create an install script that does all these things. For 
 - Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz)
 - Here are the links to the original images:
   - [Mars Image](https://www.pixel4k.com/planet-mars-4k-8k-2212.html)
-  - [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png).
+  - [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png)
 
 
 ## Acknowledgements
