@@ -7,7 +7,7 @@ extract_file() {
     filename="${file%.*}"
 
     case "$extension" in
-        "tar" | "tar.gz")
+        "tar" | "tar.gz" | "tar.xz")
             tar -xvf "$file" ;;
         "zip")
             unzip "$file" ;;
