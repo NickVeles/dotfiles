@@ -189,6 +189,7 @@ Some day I'll (surely) create an install script that does all these things. For 
   - Find the line `env = HYPRCURSOR_THEME,<cursor>`, where `<cursor>` is the currently set theme
   - Replace `<cursor>` with your desired cursor
   - Reboot or exit to SDDM
+  - **IMPORTANT**: - you can check the list of themes and cursors by running `nwg-look`
 - Changes in Gnome Tweaks:
   - Run `gnome-tweaks`
   - Go to **Appearance**
@@ -197,6 +198,8 @@ Some day I'll (surely) create an install script that does all these things. For 
   - Run `kitty +kitten themes`
   - Select the theme you want
   - Select to **Modify** the current kitty config
+- Changing the icon theme color:
+  - Run `papirus-folders -C <color> --theme Papirus-Dark`, where `<color>` is your desired color
 
 ### 2. How can I change the wallpaper?
 - Open the `.config/hypr/hyprpaper.conf` file.
