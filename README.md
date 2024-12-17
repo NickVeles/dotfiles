@@ -174,6 +174,13 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Install the Colloid GTK theme:
   - Run `git clone https://github.com/vinceliuice/Colloid-gtk-theme`
   - Run `./Colloid-gtk-theme/install.sh --theme orange --tweaks rimless`
+- Install the Bibata Modern Ice cursor theme:
+  - Run `tar -xvf .local/share/icons/Bibata-Modern-Ice.tar.xz`
+  - Run `hyprcursor-util --extract Bibata-Modern-Ice`
+  - Run `echo -e "name = Bibata-Modern-Ice\ndescription = https://github.com/ful1e5/Bibata_Cursor\nversion = 0.1\ncursors_directory = hyprcursors" > extracted_Bibata-Modern-Ice/manifest.hl`
+  - Run `hyprcursor-util --create extracted_Bibata-Modern-Ice`
+  - Run `mv theme_Bibata-Modern-Ice .local/share/icons/Bibata-Modern-Ice`
+  - Run `rm -rf Bibata-Modern-Ice extracted_Bibata-Modern-Ice` (clearing)
 
 Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
@@ -213,4 +220,5 @@ Some day I'll (surely) create an install script that does all these things. For 
 
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
-- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
+- [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/)
+- [Bibata Modern Ice Cursor Theme](https://github.com/ful1e5/Bibata_Cursor) by [Abdulkaiz Khatri](https://github.com/ful1e5)
