@@ -87,11 +87,14 @@ yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitt
   
   #### GUI Customization & Themes
   - `gnome-bluetooth-3.0` - AGS dependency
+  - `libastal-io-git` - AGS dependency
+  - `libastal-git` - AGS dependency
   - `aylurs-gtk-shell` - widgets + bar / status bar and widgets (WIP)
   - `nwg-look` - gtk theme editor
   - `dconf-editor` - theme editor
   - `papirus-icon-theme` - icon theme
   - `papirus-folders-git` - folders for papirus icon theme
+  - `bibata-cursor-theme` - cursor theme
   - `qt5-graphicaleffects` - sddm theme dep
   - `qt5-quickcontrols2` - sddm theme dep
   - `qt5-svg` - sddm theme dep
@@ -174,13 +177,6 @@ yay -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-opendyslexic-nerd ttf-font
 - Install the Colloid GTK theme:
   - Run `git clone https://github.com/vinceliuice/Colloid-gtk-theme`
   - Run `./Colloid-gtk-theme/install.sh --theme orange --tweaks rimless`
-- Install the Bibata Modern Ice cursor theme:
-  - Run `tar -xvf .local/share/icons/Bibata-Modern-Ice.tar.xz`
-  - Run `hyprcursor-util --extract Bibata-Modern-Ice`
-  - Run `echo -e "name = Bibata-Modern-Ice\ndescription = https://github.com/ful1e5/Bibata_Cursor\nversion = 0.1\ncursors_directory = hyprcursors" > extracted_Bibata-Modern-Ice/manifest.hl`
-  - Run `hyprcursor-util --create extracted_Bibata-Modern-Ice`
-  - Run `mv theme_Bibata-Modern-Ice .local/share/icons/Bibata-Modern-Ice`
-  - Run `rm -rf Bibata-Modern-Ice extracted_Bibata-Modern-Ice` (clearing)
 
 Some day I'll (surely) create an install script that does all these things. For now, it's all manual.
 
