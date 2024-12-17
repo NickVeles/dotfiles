@@ -7,7 +7,7 @@ A repository containing my linux dotfiles (WIP)
 - 🐚 **Shell**: zsh
 - 🎨 **DE**: Hyprland
 - 🖱️ **Cursor**: Bibata-Modern-Ice
-- 🖼️ **Theme**: Colloid-Dark
+- 🖼️ **Theme**: Colloid-Orange-Dark
 - 📁 **Icons**: Papirus-Dark
 - ⬛ **Terminal**: kitty
 - 🕥 **Widgets**: AGS
@@ -183,10 +183,10 @@ Some day I'll (surely) create an install script that does all these things. For 
 ### 1. How can I change the system theme?
 - Changing Hyprland config:
   - Open the `.config/hypr/hyprland.conf` file
-  - Find the line `env = GTK_THEME,theme`, where `theme` is the currently set theme
-  - Replace `theme` with your desired theme
-  - Find the line `env = HYPRCURSOR_THEME,cursor`, where `cursor` is the currently set theme
-  - Replace `cursor` with your desired cursor
+  - Find the line `env = GTK_THEME,<theme>`, where `<theme>` is the currently set theme
+  - Replace `<theme>` with your desired theme
+  - Find the line `env = HYPRCURSOR_THEME,<cursor>`, where `<cursor>` is the currently set theme
+  - Replace `<cursor>` with your desired cursor
   - Reboot or exit to SDDM
 - Changes in Gnome Tweaks:
   - Run `gnome-tweaks`
@@ -199,7 +199,7 @@ Some day I'll (surely) create an install script that does all these things. For 
 
 ### 2. How can I change the wallpaper?
 - Open the `.config/hypr/hyprpaper.conf` file.
-- Change the text after `preload = ` and `wallpaper = ,` to your desired wallpaper's location
+- Change `<wallpaper>` in `preload = <wallpaper>` and `wallpaper = ,<wallpaper>` to your desired wallpaper's location
 - Reboot or exit to SDDM
 
 ### 3. Where can I find your wallpapers?
