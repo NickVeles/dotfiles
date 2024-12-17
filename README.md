@@ -178,12 +178,15 @@ Some day I'll (surely) create an install script that does all these things. For 
 
 ## FAQ
 
-### How to change the GTK theme?
-1. Open the `.config/hypr/hyprland.conf` file.
-2. Find the line with `env = GTK_THEME,Current-Theme`, where `Current-Theme` is the placeholder for your current theme.
-3. Change `Current-Theme` to the name of your desired theme.
-    - e.g. `env = GTK_THEME,Arc-Dark`
-4. Save the file and either reboot your computer or exit to SDDM.
+### How can I change the system theme?
+1. Changing the GTK theme:
+    - Open the `.config/hypr/hyprland.conf` file
+    - Find the line `env = GTK_THEME,placeholder`, where `placeholder` the currently set theme
+    - Replace `placeholder` with your desired theme
+    - Reboot or exit to SDDM
+2. (WIP)
+
+### How can I change the wallpaper?
 
 ### Where can I find your cursors?
 Here's the direct **download**: [Bibata-Gruvbox-Cursors.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz). I used the *bibata.live* tool to create them.
@@ -195,4 +198,3 @@ Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles
 ## Acknowledgements
 This repo uses direct or modified files that bypass their intended downloads. Here's the credit to their authors:
 - [Sugar Candy SDDM Theme](https://github.com/Kangie/sddm-sugar-candy) by [Matt Jolly](https://github.com/Kangie/).
-
