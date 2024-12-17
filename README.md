@@ -199,9 +199,6 @@ Some day I'll (surely) create an install script that does all these things. For 
 - Change the text after `preload = ` and `wallpaper = ,` to your desired wallpaper's location
 - Reboot or exit to SDDM
 
-### - Where can I find your cursors?
-Here's the direct **download**: [Bibata-Gruvbox-Cursors.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/.local/share/icons/Bibata-Gruvbox-Cursors.tar.gz). I used the *bibata.live* tool to create them.
-
 ### - Where can I find your wallpapers?
 Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz). Here are the links to the original images/wallpapers: [Mars Wallpaper](https://www.pixel4k.com/planet-mars-4k-8k-2212.html), [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png).
 
