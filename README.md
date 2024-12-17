@@ -6,7 +6,7 @@ A repository containing my linux dotfiles (WIP)
 - 🖥️ **OS**: Arch Linux
 - 🐚 **Shell**: zsh
 - 🎨 **DE**: Hyprland
-- 🖱️ **Cursor**: Bibata-Modern-Gruvbox-Light
+- 🖱️ **Cursor**: Bibata-Modern-Light
 - 🖼️ **Theme**: Gruvbox-Dark
 - 📁 **Icons**: Gruvbox-Plus-Dark
 - ⬛ **Terminal**: kitty
@@ -181,10 +181,12 @@ Some day I'll (surely) create an install script that does all these things. For 
 ### How can I change the system theme?
 1. Changing the GTK theme:
     - Open the `.config/hypr/hyprland.conf` file
-    - Find the line `env = GTK_THEME,placeholder`, where `placeholder` the currently set theme
+    - Find the line `env = GTK_THEME,placeholder`, where `placeholder` is the currently set theme
     - Replace `placeholder` with your desired theme
     - Reboot or exit to SDDM
-2. (WIP)
+2. Changing the terminal theme:
+    - Run `kitty +kitten themes`
+    - Select the theme you want
 
 ### How can I change the wallpaper?
 
