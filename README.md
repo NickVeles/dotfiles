@@ -177,29 +177,29 @@ Some day I'll (surely) create an install script that does all these things. For 
 
 ## FAQ
 
-### - How can I change the system theme?
-1. Changing Hyprland config:
-    - Open the `.config/hypr/hyprland.conf` file
-    - Find the line `env = GTK_THEME,theme`, where `theme` is the currently set theme
-    - Replace `theme` with your desired theme
-    - Find the line `env = HYPRCURSOR_THEME,cursor`, where `cursor` is the currently set theme
-    - Replace `cursor` with your desired cursor
-    - Reboot or exit to SDDM
-2. Changes in Gnome Tweaks:
-    - Run `gnome-tweaks`
-    - Go to **Appearance**
-    - Adjust theme and cursor however you want
-3. Changing the terminal theme:
-    - Run `kitty +kitten themes`
-    - Select the theme you want
-    - Select to **Modify** the current kitty config
+### 1. How can I change the system theme?
+- Changing Hyprland config:
+  - Open the `.config/hypr/hyprland.conf` file
+  - Find the line `env = GTK_THEME,theme`, where `theme` is the currently set theme
+  - Replace `theme` with your desired theme
+  - Find the line `env = HYPRCURSOR_THEME,cursor`, where `cursor` is the currently set theme
+  - Replace `cursor` with your desired cursor
+  - Reboot or exit to SDDM
+- Changes in Gnome Tweaks:
+  - Run `gnome-tweaks`
+  - Go to **Appearance**
+  - Adjust theme and cursor however you want
+- Changing the terminal theme:
+  - Run `kitty +kitten themes`
+  - Select the theme you want
+  - Select to **Modify** the current kitty config
 
-### - How can I change the wallpaper?
+### 2. How can I change the wallpaper?
 - Open the `.config/hypr/hyprpaper.conf` file.
 - Change the text after `preload = ` and `wallpaper = ,` to your desired wallpaper's location
 - Reboot or exit to SDDM
 
-### - Where can I find your wallpapers?
+### 3. Where can I find your wallpapers?
 Here's the direct **download**: [Wallpapers.tar.gz](https://github.com/NickVeles/dotfiles/raw/main/Pictures/Wallpapers/Wallpapers.tar.gz). Here are the links to the original images/wallpapers: [Mars Wallpaper](https://www.pixel4k.com/planet-mars-4k-8k-2212.html), [Earth Image](https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png).
 
 
