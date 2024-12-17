@@ -185,14 +185,14 @@ Some day I'll (surely) create an install script that does all these things. For 
     - Find the line `env = HYPRCURSOR_THEME,cursor`, where `cursor` is the currently set theme
     - Replace `cursor` with your desired cursor
     - Reboot or exit to SDDM
-2. Changing the terminal theme:
-    - Run `kitty +kitten themes`
-    - Select the theme you want
-    - Select to **Modify** the current kitty config
-3. Changes in Gnome Tweaks:
+2. Changes in Gnome Tweaks:
     - Run `gnome-tweaks`
     - Go to **Appearance**
     - Adjust theme and cursor however you want
+3. Changing the terminal theme:
+    - Run `kitty +kitten themes`
+    - Select the theme you want
+    - Select to **Modify** the current kitty config
 
 ### - How can I change the wallpaper?
 - Open the `.config/hypr/hyprpaper.conf` file.
