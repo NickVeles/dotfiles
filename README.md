@@ -26,7 +26,7 @@ A repository containing my linux dotfiles (WIP)
 
 ### Deps
 ```
-yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git rofi-wayland rofi-calc-git rofi-emoji-git jq socat python-scipy tree neovim ripgrep yazi zen-browser-avx2-bin bibata-cursor-theme libastal-io-git biastal-git
+yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitty zsh oh-my-zsh powerlevel10k thunar thunar-archive-plugin thunar-volman thunar-vcs-plugin thunar-media-tags-plugin gvfs tumbler ffmpegthumbnailer libgsf raw-thumbnailer file-roller ufw timeshift lxsession-gtk3 bluez bluez-utils blueman pipewire-pulse pavucontrol pamixer cups gutenprint ghostscript hplip foomatic-db-gutenprint-ppds aylurs-gtk-shell nwg-look dconf-editor gruvbox-plus-icon-theme-git papirus-icon-theme qt5-graphicaleffects qt5-quickcontrols2 qt5-svg vlc gthumb swappy pinta gnome-bluetooth-3.0 btop piper wtype brightnessctl grimblast-git rofi-wayland rofi-calc-git rofi-emoji-git jq socat python-scipy tree neovim ripgrep yazi zen-browser-avx2-bin bibata-cursor-theme libastal-io-git biastal-git fastfetch
 ```
 
 <details>
@@ -127,11 +127,12 @@ yay -S hyprland-git hyprcursor-git hyprlock-git hypridle-git hyprpicker-git kitt
   - `jq` - jquery
   - `socat` - reading sockets
   - `python-scipy` - gruvboxize requirement
+  - `fastfetch` - system information tool
 </details>
 
 ### Optional Deps
 ```
-yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp fastfetch
+yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inkscape gimp
 ```
 
 <details>
@@ -146,7 +147,6 @@ yay -S gnome-text-editor visual-studio-code-bin baobab xorg-xhost gparted inksca
   - `gparted` - disk management
   - `inkscape` - SVG editor
   - `gimp` - raster graphics editor
-  - `fastfetch` - system information tool
 </details>
 
 ## Fonts
