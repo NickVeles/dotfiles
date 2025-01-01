@@ -1,6 +1,7 @@
 # dotfiles
 A repository containing my linux dotfiles (WIP)
 
+**AGS was reworked from the ground up, and my current UI does not work! This will take me a while to adjust!**
 
 ## Config
 - 🖥️ **OS**: Arch Linux
